@@ -5,8 +5,8 @@ bibliography: [references.bib]
 ## Introduction  
 The occurrence of a species in a given location is an encrypted message that
 travels through time. It carries the species' evolutionary history, long
-migration journeys, effects of other species we do not even know that exist,
-and ultimately the elements that shape its, yet unknown, future. Ecologists have
+migration journeys, effects of other species we do not even know that exist, and
+ultimately the elements that shape its, yet unknown, future. Ecologists have
 been trying to decode this message with progressively more powerful tools, since
 their own field notes to highly complex computational algorithms, such as
 habitat suitability models. These models were born as an attempt to model
@@ -18,29 +18,52 @@ are ecological interactions. Habitat suitability models (hereafter HSMs) can be
 untangled in three aspects of a species occurrence: its biotic environment - the
 connections it makes with other species -, its abiotic environment - the
 connection it makes with non-living resources -, and its mobility range - how
-far it can go (+@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on these models as potential and realized interactions, constrained or enabled by abiotic factors, geographical conformation and migratory ability.    
-![The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Each circle corresponds
-to the theoretical space of a species, regarding its biotic interactions (the B),
-the abiotically suitable space (the A) and the geographic area accessible to
-it (the M). These three aspects represent real points of occurrence on the
-real geographic space (the G). Ecological interactions act over this model in
-four ways: in (1), there are potential interactions that are never realized
-because of geographical and environmental constraints; in (2) interactions
-are realized on accessible, abiotically suitable areas; the space (3) is
-where the species could eventually go and establish new interactions, while
-(4) is the area where the occurrence of the species is limited only by
-abiotic factors.](figures/bam.png){#fig:bam}  
+far it can go (+@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on
+these models as potential and realized interactions, constrained or enabled by
+abiotic factors, geographical conformation and migratory ability.  
+![The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Each circle corresponds to the
+theoretical space of a species, regarding its biotic interactions (the B), the
+abiotically suitable space (the A) and the geographic area accessible to it (the
+M). These three aspects represent real points of occurrence on the real
+geographic space (the G). Ecological interactions act over this model in four
+ways: in (1), there are potential interactions that are never realized because
+of geographical and environmental constraints; in (2) interactions are realized
+on accessible, abiotically suitable areas; the space (3) is where the species
+could eventually go and establish new interactions, while (4) is the area where
+the occurrence of the species is limited only by abiotic
+factors.](figures/bam.png){#fig:bam}  
 
-Accounting for environmental variables and geographic limits on biodiversity distribution models is a good approach because these characteristics are not (highly) dynamic entities from the
-evolutionary point of view. Because the climate (used to) change at a very slow pace, as well as species' niche, we could expect to find the same pool of species that are able to live in a certain region, even if populations fluctuated at a smaller temporal scale. This is because the cumulative effect of small scale variation on climate, population dynamics and habitat suitability itself result in macroecological outcomes such as combinations of extinction and cladogenesis, which lead to biodiversity distribution at continental scales. Also, abiotic variables are not under the influence of the focus species, which make them statistically safe while adding generalization on the model.
-[WHY INTERACTIONS ARE DYNAMIC] However, adding complexity and accuracy to
-
-There is a big ecological and evolutionary leap between local dynamics between
-species and the biogeographical processes that are primary assumptions to the
-species distribution models and cannot be ignored. [EVOLUTION, PHYLOGENIES ETC]
-However, it has been shown that ecological interactions shape the limits of a
-species' occurrence range (especially for plants), and HSMs are more efficient
-when we add (what we believe accounts for) this effect. For example, [EXAMPLES].
+Accounting for environmental variables and geographic limits on biodiversity
+distribution models is a good approach because these characteristics are not
+(highly) dynamic entities from the evolutionary point of view. Because the
+climate (used to) change at a very slow pace, as well as species' niche, we
+could expect to find the same pool of species that are able to live in a certain
+region, even if populations fluctuated at a smaller temporal scale. This is
+because the cumulative effect of small scale variation on climate, population
+dynamics and habitat suitability itself result in macroecological outcomes such
+as combinations of extinction and cladogenesis, which lead to biodiversity
+distribution at continental scales. Also, abiotic variables are not under the
+influence of the focus species, which make them statistically safe, and their
+relationship with the species' niche is assumed to be static in space and time,
+which adds generalization to the model. The biotic space, on the other hand, is
+usually highly dynamic and variable, but varies from stochastic at very small
+scales to predictable structures at large scales. For example, the effect of
+mutualists can be positive or negative depending on their density
+[@Wolin2015ModFac], which often fluctuates randomly throughout the history of a
+population because of genetic effects. At large scales, ecological interactions
+shape range limits of species while they are more or less likely to occur
+according to the location of the population inside the species range
+[@Godsoe2017IntBio; @Bar-Massada2017NonCoo; @Svenning2014InfInt]. Also, ecological networks are the
+cumulative result of local events [@Poisot2016HowEco; @Guimaraes2020StrEco] and
+its properties can vary with environmental factors and species evolutionary
+history [@MartinGonzalez2015MacPhy; @Dalsgaard2013HisCli]. There is a big
+ecological and evolutionary leap between local dynamics of species and the
+biogeographical processes that are the primary assumptions to the habitat
+suitability and species distribution models. However, because ecological
+networks are very informative and aggregate populations' dynamics though scales,
+it is conceptually important to include them in HSMs. In fact, it has been shown
+that HSMs are more efficient when ecological interactions are accounted for
+(either directly or indirectly) [@Wisz2013RolBio; @Cazelles2016IntBioa].
 
 There are things that have been done, some of them are quite satisfactory on
 specific cases, but can we go further? SDMs of species with obligate mutualists,
