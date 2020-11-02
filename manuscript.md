@@ -16,9 +16,9 @@ suitability models (hereafter HSMs) can be untangled in three aspects of a
 species occurrence: its biotic environment - the connections it makes with
 other species -, its abiotic environment - the connection it makes with
 non-living resources -, and its mobility range - how far it can go
-(@fig:bam)(@Peterson2012EcoNic).  
-![](figures/bam.png){#fig:bam}  
-@fig:bam - The "BAM diagram", adapted from @Soberon2007GriElta. Each circle corresponds
+(+@fig:bam)[@Peterson2012EcoNic].  
+![bam diagram](figures/bam.png){#fig:bam}  
++@fig:bam - The "BAM diagram", adapted from [@Soberon2007GriElta]. Each circle corresponds
 to the theoretical space of a species, regarding its biotic interactions (the B),
 the abiotically suitable space (the A) and the geographic area accessible to
 it (the M). These three aspects represent real points of occurrence on the
@@ -63,7 +63,7 @@ an SDM.
 **We point to promising directions on the development of these techniques and
 **main challenges ecologists might face in the near future.**
 
-![](figures/concept.png)
+![TODO](figures/concept.png)
 
 ## SDMs: the mechanics, innovations and drawbacks  
 
