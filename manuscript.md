@@ -63,7 +63,7 @@ suitability and species distribution models. However, because ecological
 networks are very informative and aggregate populations' dynamics though scales,
 it is conceptually important to include them in HSMs. In fact, it has been shown
 that HSMs are more efficient when ecological interactions are accounted for
-(either directly or indirectly) [@Wisz2013RolBio; @Cazelles2016IntBioa].
+(either directly or indirectly) [@Wisz2013RolBio; @Cazelles2016IntBio].
 
 There are things that have been done, some of them are quite satisfactory on
 specific cases, but can we go further? SDMs of species with obligate mutualists,
