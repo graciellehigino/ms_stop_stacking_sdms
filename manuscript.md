@@ -1,3 +1,7 @@
+---
+bibliography: [references.bib]
+---
+
 ## Introduction  
 The occurrence of a species in a given location is an encrypted message that
 travels through time. It carries the species' evolutionary history, long
@@ -27,10 +31,9 @@ where the species could eventually go and establish new interactions, while
 (4) is the area where the occurrence of the species is limited only by
 abiotic factors.](figures/bam.png){#fig:bam}  
 
-Accounting for environmental variables and geographic limits are pretty
-straightforward because they are not (highly) dynamic entities from the
-evolutionary point of view. Macroecological outcomes of historical processes are at the core of HSMs, such as combinations of extinction and cladogenesis that lead to biodiversity distribution at continental scales. These processes are the cumulative result of small scale variation on climate, communities
-[WHY INTERACTIONS ARE DYNAMIC]
+Accounting for environmental variables and geographic limits on biodiversity distribution models is a good approach because these characteristics are not (highly) dynamic entities from the
+evolutionary point of view. Because the climate (used to) change at a very slow pace, as well as species' niche, we could expect to find the same pool of species that are able to live in a certain region, even if populations fluctuated at a smaller temporal scale. This is because the cumulative effect of small scale variation on climate, population dynamics and habitat suitability itself result in macroecological outcomes such as combinations of extinction and cladogenesis, which lead to biodiversity distribution at continental scales. Also, abiotic variables are not under the influence of the focus species, which make them statistically safe while adding generalization on the model.
+[WHY INTERACTIONS ARE DYNAMIC] However, adding complexity and accuracy to
 
 There is a big ecological and evolutionary leap between local dynamics between
 species and the biogeographical processes that are primary assumptions to the
