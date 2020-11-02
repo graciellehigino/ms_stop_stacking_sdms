@@ -1,24 +1,21 @@
 ## Introduction  
-The occurrence of a species in a given location is an
-encrypted message that travels through time. It carries the species'
-evolutionary history, long migration journeys, adaptation through generations,
-effects of other species we do not even know that exist, and
-ultimately the elements that shape its, yet unknown, future. Ecologists have
-been trying to decode this message with progressively more powerful tools,
-since their own field journals to highly complex computational algorithms,
-such as habitat suitability models. These models were born as an attempt to
-model species' distribution based on their niche, considering their
-occurrences as sample points of suitable abiotic variables and their absences
-as sample points of unsuitable variables. However, these observations
-(environmental variables and geographic location) only unveils part of the
-mystery, and the missing link are ecological interactions. Habitat
-suitability models (hereafter HSMs) can be untangled in three aspects of a
-species occurrence: its biotic environment - the connections it makes with
-other species -, its abiotic environment - the connection it makes with
-non-living resources -, and its mobility range - how far it can go
-(+@fig:bam)[@Peterson2012EcoNic].  
-![bam diagram](figures/bam.png){#fig:bam}  
-+@fig:bam - The "BAM diagram", adapted from [@Soberon2007GriElta]. Each circle corresponds
+The occurrence of a species in a given location is an encrypted message that
+travels through time. It carries the species' evolutionary history, long
+migration journeys, effects of other species we do not even know that exist,
+and ultimately the elements that shape its, yet unknown, future. Ecologists have
+been trying to decode this message with progressively more powerful tools, since
+their own field notes to highly complex computational algorithms, such as
+habitat suitability models. These models were born as an attempt to model
+species' distribution based on their niche, considering their occurrences as
+sample points of suitable abiotic variables and their absences as sample points
+of unsuitable variables. However, these observations (environmental variables
+and geographic location) only unveils part of the mystery, and the missing link
+are ecological interactions. Habitat suitability models (hereafter HSMs) can be
+untangled in three aspects of a species occurrence: its biotic environment - the
+connections it makes with other species -, its abiotic environment - the
+connection it makes with non-living resources -, and its mobility range - how
+far it can go (+@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on these models as potential and realized interactions, constrained or enabled by abiotic factors, geographical conformation and migratory ability.    
+![The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Each circle corresponds
 to the theoretical space of a species, regarding its biotic interactions (the B),
 the abiotically suitable space (the A) and the geographic area accessible to
 it (the M). These three aspects represent real points of occurrence on the
@@ -28,11 +25,12 @@ because of geographical and environmental constraints; in (2) interactions
 are realized on accessible, abiotically suitable areas; the space (3) is
 where the species could eventually go and establish new interactions, while
 (4) is the area where the occurrence of the species is limited only by
-abiotic factors.
+abiotic factors.](figures/bam.png){#fig:bam}  
 
 Accounting for environmental variables and geographic limits are pretty
 straightforward because they are not (highly) dynamic entities from the
-evolutionary point of view. [WHY INTERACTIONS ARE DYNAMIC]
+evolutionary point of view. Macroecological outcomes of historical processes are at the core of HSMs, such as combinations of extinction and cladogenesis that lead to biodiversity distribution at continental scales. These processes are the cumulative result of small scale variation on climate, communities
+[WHY INTERACTIONS ARE DYNAMIC]
 
 There is a big ecological and evolutionary leap between local dynamics between
 species and the biogeographical processes that are primary assumptions to the
