@@ -1,0 +1,51 @@
+[TITLE]
+
+[THE LOGICS]
+Species interactions integrated in SDMs: everybody knows it's important, but nobody knows exactly how to do it. There's a big ecological and evolutionary leap between local dynamics between species and the biogeographical processes that are primary assumptions to the species distribution models. Despite that, it's known that ecological interactions shape the limits of a species' occurrence range (especially for plants), and SDMs are more efficient when we add (what we believe accounts for) this effect.
+There are things that have been done, some of them are quite satisfatory on specific cases, but can we go further?
+SDMs of species with obligate mutualists, for example, are more efficient when we add the mutualist occurrence raster as a layer on our model. However, empirical data on ecological interactions are scarce, and we can't just assume that two species will always interact when they co-occur.
+The good news is that we have been developing techniques to predict and forecast ecological interactions and networks with good accuracy, also accounting for evolutionary processes, which can mitigate the eltonian shortfall we have now. 
+In this context, we can envision an integrative approach of species distribution modelling combined with network prediction resulting in a more realistic model, where the predicted networks update the probabilities of occurrence computed by an SDM. 
+
+[OUTLINE]
+
+## Introduction 
+BAM fig - the ligics behind SDMs
+concept fig - where's this paper going
+Why should we integrate interactions with SDMs - the right way?
+Why is this paper important?
+
+## SDMs: the mechanics, innovations and drawbacks  
+What people have been doing? Are these things cool?
+	How a SDM works and why do people think they can do what they do?
+What are the inovations brought by these techniques?
+What are the limitations for current techniques?
+
+## Going further  
+What do we need to go further?
+Should we make SDMs more realistic or more generalistic?
+What would be the difference between being able to detect interactions and to predict interactions for the quality of a SDM?
+If you need interspecific interactions to predict species distribution, and if you need species distribution to predict networks, how would your method work, exactly? [Francis' question]
+
+### Eltonian Noise  
+What does it means and how do we know it is important (or not)?
+
+### Non-stationarity of interactions and networks in space, time and across resolutions  
+The (big) problem of interactions not being stable (and why phylogenies sometimes are not the answer)
+
+### Why go further? Because we can!  
+What do we have now that allows us to go further?
+
+### How  
+#### Filling in eltonian gaps with mathematics - predicting interactions, networks, and doing it across scales  
+
+#### Updating probabilities of occurrences with network probabilities  
+Interactions predictions should be used to update our probabilities of occurrence computed with SDM [Francis' input]
+
+## Take-home messages 
+What don't we have yet?
+What are the roads never taken? Where should we invest in order to achieve the best SDMs we can? What are the most promising areas for development? 
+	
+	
+
+
