@@ -21,18 +21,20 @@ connections it makes with other species -, its abiotic environment - the
 connection it makes with non-living resources -, and its mobility range - how
 far it can go (+@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on
 these models as potential and realized interactions, constrained or enabled by
-abiotic factors, geographical conformation and migratory ability.   ![The "BAM
-diagram", adapted from [@JorgeSoberon2007GriElt]. Each circle corresponds to the
-theoretical space of a species, regarding its biotic interactions (the B), the
-abiotically suitable space (the A) and the geographic area accessible to it (the
-M). These three aspects represent real points of occurrence on the real
-geographic space (the G). Ecological interactions act over this model in four
-ways: in (1), there are potential interactions that are never realized because
-of geographical and environmental constraints; in (2) interactions are realized
-on accessible, abiotically suitable areas; the space (3) is where the species
-could eventually go and establish new interactions, while (4) is the area where
-the occurrence of the species is limited only by abiotic
-factors.](figures/bam.png){#fig:bam}  
+abiotic factors, geographical conformation and migratory ability.   
+
+![](figures/bam.png){#fig:bam}  
+Fig. 1 - The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Each circle
+corresponds to the theoretical space of a species, regarding its biotic
+interactions (the B), the abiotically suitable space (the A) and the geographic
+area accessible to it (the M). These three aspects represent real points of
+occurrence on the real geographic space (the G). Ecological interactions act
+over this model in four ways: in (1), there are potential interactions that are
+never realized because of geographical and environmental constraints; in (2)
+interactions are realized on accessible, abiotically suitable areas; the space
+(3) is where the species could eventually go and establish new interactions,
+while (4) is the area where the occurrence of the species is limited only by
+abiotic factors.  
 
 Accounting for environmental variables and geographic limits on biodiversity
 distribution models is a good approach because these characteristics are not
@@ -59,6 +61,7 @@ ecological networks are the cumulative result of local events
 [@Poisot2016HowEco; @Guimaraes2020StrEco] and its properties can vary with
 environmental factors and species evolutionary history
 [@MartinGonzalez2015MacPhy; @Dalsgaard2013HisCli].   
+
 There is a big ecological and evolutionary leap between local dynamics of
 species and the biogeographical processes that are the primary assumptions to
 the habitat suitability and species distribution models. However, because
@@ -96,7 +99,9 @@ near future.
 
 ![TODO](figures/concept.png)
 
-## SDMs: the mechanics, innovations and drawbacks  
+## HSMs: the mechanics, innovations and drawbacks  
+
+
 
 ## Going further  
 
@@ -113,3 +118,5 @@ near future.
 #### Updating probabilities of occurrences with network probabilities  
 
 ## Take-home messages   
+
+## References
