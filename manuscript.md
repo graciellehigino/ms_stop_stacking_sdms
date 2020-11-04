@@ -117,7 +117,7 @@ dynamic in space, and only makes sense when calculated for the area inside M.
 Therefore, this means that they will find suitable areas inside the area 2,
 where species really are, but can also find suitable areas in 5, where the
 species probably are not because of biotic unsuitability. Species distribution
-models, on the other hand, should aim at modelling 2 (B \cap A \cap M), which
+models, on the other hand, should aim at modelling 2 (B $\cap$ A $\cap$ M), which
 means considering biotic constraints [@Peterson2012EcoNic]. Although they rarely
 do so, Guisan and Zimmermann (2000) argue that the observation data used as
 input on these models carries these information: when we use the physiological
