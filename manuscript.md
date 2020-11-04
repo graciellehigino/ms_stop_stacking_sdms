@@ -19,11 +19,11 @@ are ecological interactions. Habitat suitability models (hereafter HSMs) can be
 untangled in three aspects of a species occurrence: its biotic environment - the
 connections it makes with other species -, its abiotic environment - the
 connection it makes with non-living resources -, and its mobility range - how
-far it can go (+@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on
+far it can go (@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on
 these models as potential and realized interactions, constrained or enabled by
 abiotic factors, geographical conformation and migratory ability.   
 
-![Fig. 1 - The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Open circles
+![The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Open circles
 are absences and solid circles are observed presences. Big circles correspond to
 the theoretical space of a species, regarding its biotic interactions (the B),
 the abiotically suitable space (the A) and the geographic area accessible to it
@@ -109,7 +109,7 @@ scientific community, and here we chose to distinguish habitat suitability
 models from species distribution models.  
 
 Ecological niche models and habitat suitability models focus on the the area of
-A of the BAM diagram [+@fig:bam] where a species can occur, which means they
+A of the BAM diagram [@fig:bam] where a species can occur, which means they
 calculate the fundamental niche of species [@Peterson2012EcoNic]. This can be
 achieved by finding the relationship between environmental conditions and the
 presence or absence of a certain species. This relationship can be static or
@@ -137,7 +137,7 @@ ideas on how to integrate biotic constraints.
 Habitat suitability models are built over five steps: conceptualization, data
 sampling, calibration, evaluation and prediction [@Guisan2017HabSui]. The
 conceptualization is related to the core ideas of niche, as illustrated in
-+@fig:bam, but also to the main goals of the investigation. What processes are
+@fig:bam, but also to the main goals of the investigation. What processes are
 important to the patterns we a dealing with, what is the frequency in which they
 repeat in space (determining the grain and extent of the environmental
 variables) and what are the direct and indirect predictors are examples of
