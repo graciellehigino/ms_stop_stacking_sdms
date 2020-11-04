@@ -24,17 +24,17 @@ these models as potential and realized interactions, constrained or enabled by
 abiotic factors, geographical conformation and migratory ability.   
 
 ![](figures/bam.png){#fig:bam}  
-Fig. 1 - The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Each circle
-corresponds to the theoretical space of a species, regarding its biotic
-interactions (the B), the abiotically suitable space (the A) and the geographic
-area accessible to it (the M). These three aspects represent real points of
-occurrence on the real geographic space (the G). Ecological interactions act
-over this model in four ways: in (1), there are potential interactions that are
-never realized because of geographical and environmental constraints; in (2)
-interactions are realized on accessible, abiotically suitable areas; the space
-(3) is where the species could eventually go and establish new interactions,
-while (4) is the area where the occurrence of the species is limited only by
-abiotic factors.  
+Fig. 1 - The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Open circles
+are absences and solid circles are observed presences. Big circles correspond to
+the theoretical space of a species, regarding its biotic interactions (the B),
+the abiotically suitable space (the A) and the geographic area accessible to it
+(the M). These three aspects represent real points of occurrence on the real
+geographic space (the G). Ecological interactions act over this model in four
+ways: in (1), there are potential interactions that are never realized because
+of geographical and environmental constraints; in (2) interactions are realized
+on accessible, abiotically suitable areas; the space (3) is where the species
+could eventually go and establish new interactions, while (4) is the area where
+the occurrence of the species is limited only by abiotic factors.  
 
 Accounting for environmental variables and geographic limits on biodiversity
 distribution models is a good approach because these characteristics are not
@@ -101,7 +101,64 @@ near future.
 
 ## HSMs: the mechanics, innovations and drawbacks  
 
+Habitat suitability models aim at finding relationships between the occurrence
+of species and their environment [@Guisan2000PreHab; @Guisan2017HabSui]. The
+reader might have encountered different terminologies in this area, such as
+species distribution modelling and ecological niche modelling, that supposedly
+have the same objectives. The terminology is a matter of debate on the
+scientific community, and here we chose to distinguish habitat suitability
+models from species distribution models.  
 
+Ecological niche models and habitat suitability models focus on the the area of
+A of the BAM diagram [+@fig:bam] where a species can occur, which means they
+calculate the fundamental niche of species [@Peterson2012EcoNic]. This can be
+achieved by finding the relationship between environmental conditions and the
+presence or absence of a certain species. This relationship can be static or
+dynamic in space, and only makes sense when calculated for the area inside M.
+Therefore, this means that they will find suitable areas inside the area 2,
+where species really are, but can also find suitable areas in 5, where the
+species probably are not because of biotic unsuitability. Species distribution
+models, on the other hand, should aim at modelling 2 (B \cap A \cap M), which
+means considering biotic constraints [@Peterson2012EcoNic]. Although they rarely
+do so, Guisan and Zimmermann (2000) argue that the observation data used as
+input on these models carries these information: when we use the physiological
+limits of a species as a variable to be correlated to the environment, we are
+modelling its fundamental niche, while using observational field occurrence data
+implies that we are modelling the realized niche (thus, the species
+distribution) because these data implicitly accounts for biotic limitations
+[@Guisan2000PreHab]. However, because the biotic constraints are not explicitly
+considered in the models, it is possible that the predicted distribution area
+reaches places with completely different communities. Because we did not
+consider previous knowledge about species interactions, how can we interpret
+this result? Given these differences between SDMs and HSMs, many statistical
+approaches can be used to model both of them. Here we focus on the most
+innovative algorithms to find the species' suitable habitats, to further develop
+ideas on how to integrate biotic constraints.
+
+Habitat suitability models are built over five steps: conceptualization, data
+sampling, calibration, evaluation and prediction [@Guisan2017HabSui]. The
+conceptualization is related to the core ideas of niche, as illustrated in
++@fig:bam, but also to the main goals of the investigation. What processes are
+important to the patterns we a dealing with, what is the frequency in which they
+repeat in space (determining the grain and extent of the environmental
+variables) and what are the direct and indirect predictors are examples of
+questions that should be asked at this step. The answers to these questions will
+determine how the data should be sampled (the spatial scale of the variables)
+and the appropriate selection of the variables [@Guisan2000PreHab]. Then the
+actual building of the mathematical model enters the stage, with iterative
+adjustments to capture its variations. The data is separated in training
+validation sets, and then the model is used to predict and project probabilities
+is space that can be interpreted as habitat suitability.
+
+<!---inovations--->
+Machine learning algorithms have the power to learn from the data, identifying
+structure and generating predictions [@Olden2008MacLea]. They allow us to
+explore "mischievous" data, embracing the multiple frequency distributions we
+find in nature. Many of them have become popular among ecologists, such as
+MaxEnt and Random Forest [CITATIONS], while making a good match with the
+continuously growing amount of biodiversity data (and all its biases).
+
+<!---drawbacks--->
 
 ## Going further  
 
