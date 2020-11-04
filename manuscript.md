@@ -23,8 +23,7 @@ far it can go (+@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on
 these models as potential and realized interactions, constrained or enabled by
 abiotic factors, geographical conformation and migratory ability.   
 
-![](figures/bam.png){#fig:bam}  
-Fig. 1 - The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Open circles
+![Fig. 1 - The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Open circles
 are absences and solid circles are observed presences. Big circles correspond to
 the theoretical space of a species, regarding its biotic interactions (the B),
 the abiotically suitable space (the A) and the geographic area accessible to it
@@ -34,7 +33,7 @@ ways: in (1), there are potential interactions that are never realized because
 of geographical and environmental constraints; in (2) interactions are realized
 on accessible, abiotically suitable areas; the space (3) is where the species
 could eventually go and establish new interactions, while (4) is the area where
-the occurrence of the species is limited only by abiotic factors.  
+the occurrence of the species is limited only by abiotic factors.](figures/bam.png){#fig:bam}  
 
 Accounting for environmental variables and geographic limits on biodiversity
 distribution models is a good approach because these characteristics are not
