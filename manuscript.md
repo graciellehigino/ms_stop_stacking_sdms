@@ -149,17 +149,51 @@ adjustments to capture its variations. The data is separated in training
 validation sets, and then the model is used to predict and project probabilities
 is space that can be interpreted as habitat suitability.
 
-<!---inovations--->
-Machine learning algorithms have the power to learn from the data, identifying
-structure and generating predictions [@Olden2008MacLea]. They allow us to
-explore "mischievous" data, embracing the multiple frequency distributions we
-find in nature. Many of them have become popular among ecologists, such as
-MaxEnt and Random Forest [CITATIONS], while making a good match with the
-continuously growing amount of biodiversity data (and all its biases).
+<!---innovations--->
+While statistical inference is a telescope that allows us to investigate the
+past of biodiversity structure, machine learning algorithms are some of the time
+machines we use to assess the past in order to predict the future. They have the
+power to learn from the data, identifying structure and generating predictions
+[@Olden2008MacLea]. One sound advantage of these models compared to statistical
+inference is that they allow us to explore "mischievous" data, embracing the
+multiple frequency distributions we find in nature. Many of them have become
+popular among ecologists, such as MaxEnt [@Phillips2006MaxEnt] and Random Forest
+[@Breiman2001RanFor], while making a good match with the continuously growing
+amount of biodiversity data. Although these models call for cautious usage for
+their complexity and hard to interpret outputs [@Rangel2012LabEco], these very
+characteristics are the ones that allow us to explore nuances of biodiversity
+relationships, such as the role of ecological interactions in shaping species
+distribution - i.e. putting the B back in the BAM model.     
 
 <!---drawbacks--->
+However, these time machines need a past to learn from, and the lack of
+information about species interactions makes this past quite blurry. Ecological
+interactions occur across taxonomic and geographic scales
+[@Guimaraes2020StrEco], and the task to collect these information through large
+extents and in fine grain (both temporal and spatial) is daunting. In addition,
+it is known that networks vary with climate, in space and with phylogenetic
+distance [@Poisot2014SpeWhy; CITATIONS]. Despite the dynamic nature of networks'
+structure (as predictable outcomes of common processes), methods such as stacked
+(S-SDMs) and joint Species Distribution Models (JSDMs) are very common to
+address the influence of one species over another [CITATIONS]. These methods
+assume that, if a pair of species are known to interact, they will always do so
+once they co-occur [CITATIONS]. For example, in order to do a stacked SDM, one
+can model the assembly as a single unit, use the predicted distribution of each
+species and pile them up together or model species at the same time, but as
+separate units [@Ferrier2006SpaMod]. On the other hand, JSDMs use a hierarchical
+regression model to calculate the probability of occurrence of all species
+together in response of environmental variables [@Pollock2014UndCoo]. Both
+approaches can be considered great advances regarding previous methods that
+simply added the distribution of one or more other species as limiting factors
+in the model [CITATIONS]. S-SDMs and JSDMs try to incorporate another level of
+complexity by modelling assembly rules as an intermediate step towards more
+realistic HSMs (see @Zurell2020TesSpe for a comparison between both methods).
+Nevertheless, our time machines can take us even further and incorporate actual
+species interaction and predicted network properties in species distribution
+models.
 
 ## Going further  
+<!---why interactions in SDMs--->
 
 ### Eltonian Noise  
 
