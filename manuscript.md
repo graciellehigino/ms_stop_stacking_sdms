@@ -212,6 +212,7 @@ data and predict interactions and networks for communities we did not access
 yet.
 
 ### Eltonian Noise  
+
 The Eltonian Noise Hypothesis states that the effect of ecological interactions
 on species distribution is captured at coarse resolution analyses as a
 covariation with environmental factors [@Soberon2009NicDis]. This logic reverts
