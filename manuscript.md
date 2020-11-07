@@ -267,6 +267,14 @@ generalists would co-occur with a greater number of other species
 their aggregation in space and the effect of interactions on their range limits
 [@Godsoe2017IntBio].  
 
+Certainly, the exact macro scale effect of interspecies interactions might depend
+on the nature of these interactions, the system being studied and the
+combination of geographical and environmental factors. Younger communities may
+be more affected by environmental limitations, once they are dominated by
+generalist species, while older metacommunities are probably affected in
+different ways in the centre of the distribution, at the edge of ranges and in
+sink and source communities.
+
 ### Non-stationarity of interactions and networks in space, time and across resolutions  
 
 
