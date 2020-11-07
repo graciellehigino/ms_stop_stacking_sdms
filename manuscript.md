@@ -42,7 +42,7 @@ climate (used to) change at a very slow pace, as well as species' niche, we
 could expect to find the same pool of species that are able to live in a certain
 region, even if populations fluctuated at a smaller temporal scale. This is
 because the cumulative effect of small scale variation on climate, population
-dynamics and habitat suitability itself result in macroecological outcomes such
+dynamics and habitat suitability itself results in macroecological outcomes such
 as combinations of extinction and cladogenesis, which lead to biodiversity
 distribution at continental scales. Also, abiotic variables are not under the
 influence of the focus species, which make them statistically safe, and their
@@ -160,10 +160,12 @@ multiple frequency distributions we find in nature. Many of them have become
 popular among ecologists, such as MaxEnt [@Phillips2006MaxEnt] and Random Forest
 [@Breiman2001RanFor], while making a good match with the continuously growing
 amount of biodiversity data. Although these models call for cautious usage for
-their complexity and hard to interpret outputs [@Rangel2012LabEco], these very
-characteristics are the ones that allow us to explore nuances of biodiversity
-relationships, such as the role of ecological interactions in shaping species
-distribution - i.e. putting the B back in the BAM model.     
+their complexity (and hard to interpret outputs) [@Rangel2012LabEco], it also
+demands some ecological knowledge about the relationships being modelled and
+careful parameterisation of terms. These very characteristics are the ones that
+allow us to explore nuances of biodiversity relationships, such as the role of
+ecological interactions in shaping species distribution - i.e. putting the B
+back in the BAM model.     
 
 <!---drawbacks--->
 However, these time machines need a past to learn from, and the lack of
@@ -173,16 +175,16 @@ interactions occur across taxonomic and geographic scales
 extents and in fine grain (both temporal and spatial) is daunting. In addition,
 it is known that networks vary with climate, in space and with phylogenetic
 distance [@Poisot2014SpeWhy; CITATIONS]. Despite the dynamic nature of networks'
-structure (as predictable outcomes of common processes), methods such as stacked
+structures (that are predictable outcomes of common processes), methods such as stacked
 (S-SDMs) and joint Species Distribution Models (JSDMs) are very common to
 address the influence of one species over another [CITATIONS]. These methods
 assume that, if a pair of species are known to interact, they will always do so
 once they co-occur [CITATIONS]. For example, in order to do a stacked SDM, one
 can model the assembly as a single unit, use the predicted distribution of each
-species and pile them up together or model species at the same time, but as
+species and pile them up together, or model species at the same time, but as
 separate units [@Ferrier2006SpaMod]. On the other hand, JSDMs use a hierarchical
 regression model to calculate the probability of occurrence of all species
-together in response of environmental variables [@Pollock2014UndCoo]. Both
+together in response to environmental variables [@Pollock2014UndCoo]. Both
 approaches can be considered great advances regarding previous methods that
 simply added the distribution of one or more other species as limiting factors
 in the model [CITATIONS]. S-SDMs and JSDMs try to incorporate another level of
@@ -193,11 +195,54 @@ species interaction and predicted network properties in species distribution
 models.
 
 ## Going further  
+
 <!---why interactions in SDMs--->
+Spatially structured co-occurrence can be the result of many historical and
+geographical processes, such as environmental heterogeneity and the similarity
+of environmental preferences between species [@Bar-Massada2017NonCoo]. HSMs that
+account for co-occurrence as a proxy for interactions might wrongly capture
+these processes as biotic variables. An important analysis to be made
+before going further is at which scale ecological interactions influence the
+distribution of species. Although empirical evidence exists that ecological
+interactions are important processes on population arrangements in space
+[CITATIONS] and networks variation can be detected in macroecological scales
+[CITATIONS], their precise relationship with spatial scale remains unclear.
+Artificial Intelligence tools can help us identify structure on the available
+data and predict interactions and networks for communities we did not access
+yet.
 
 ### Eltonian Noise  
 
+The Eltonian Noise Hypothesis states that the effect of ecological interactions
+on species distribution is captured at coarse resolution analyses as a
+covariation with environmental factors [@Soberon2009NicDis]. This logic reverts
+as an assumption that always that two given species co-occur, they will
+interact, which has been demonstrated to be not true [@Blanchet2020CooNot]. In
+fact, the contrary is likely to be true: the nature of interactions happening at
+a given location affects co-occurrence [@Chesson2008IntPre; @Godsoe2017IntBio;
+@Svenning2014InfInt; @Bullock2000GeoSep], and they vary in space and time due to
+climate change, phylogenetic diversity (addition or extinction of clades in the
+community, for example)[@Davies2011PhyDiv], population density
+[@Carnicer2009TemDyn], and many other factors. Additionally, analyses of range
+expansion rates - a common and very important application of HSMs - are
+intrinsically connected to interspecific interactions at the border of the
+ranges: the expansion tends to be slower when generalists predators are present
+or when mutualists are absent [@Svenning2014InfInt].  
+
+This hypothesis also seems to find no support when we investigate the
+betadiversity of links in ecological networks. In parasite-hosts systems in
+Eurasia, it is possible to detect a distinct difference in interactions between
+shared species in macroecological scale, suggesting an "unpacking" of species
+when biodiversity is comparatively lower [CHAPTER 1]. In addition, it is
+expected that species with bigger ranges of distribution and those that are more
+generalists would co-occur with a greater number of other species
+[@Dattilo2020SpeDri], while dispersal capacity of competitive species modulate
+their aggregation in space and the effect of interactions on their range limits
+[@Godsoe2017IntBio].  
+
 ### Non-stationarity of interactions and networks in space, time and across resolutions  
+
+
 
 ### Why go further? Because we can!  
 
