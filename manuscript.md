@@ -240,33 +240,6 @@ generalists would co-occur with a greater number of other species
 their aggregation in space and the effect of interactions on their range limits
 [@Godsoe2017IntBio].  
 
-The Eltonian Noise Hypothesis states that the effect of ecological interactions
-on species distribution is captured at coarse resolution analyses as a
-covariation with environmental factors [@Soberon2009NicDis]. This logic reverts
-as an assumption that always that two given species co-occur, they will
-interact, which has been demonstrated to be not true [@Blanchet2020CooNot]. In
-fact, the contrary is likely to be true: the nature of interactions happening at
-a given location affects co-occurrence [@Chesson2008IntPre; @Godsoe2017IntBio;
-@Svenning2014InfInt; @Bullock2000GeoSep], and they vary in space and time due to
-climate change, phylogenetic diversity (addition or extinction of clades in the
-community, for example)[@Davies2011PhyDiv], population density
-[@Carnicer2009TemDyn], and many other factors. Additionally, analyses of range
-expansion rates - a common and very important application of HSMs - are
-intrinsically connected to interspecific interactions at the border of the
-ranges: the expansion tends to be slower when generalists predators are present
-or when mutualists are absent [@Svenning2014InfInt].  
-
-This hypothesis also seems to find no support when we investigate the
-betadiversity of links in ecological networks. In parasite-hosts systems in
-Eurasia, it is possible to detect a distinct difference in interactions between
-shared species in macroecological scale, suggesting an "unpacking" of species
-when biodiversity is comparatively lower [CHAPTER 1]. In addition, it is
-expected that species with bigger ranges of distribution and those that are more
-generalists would co-occur with a greater number of other species
-[@Dattilo2020SpeDri], while dispersal capacity of competitive species modulate
-their aggregation in space and the effect of interactions on their range limits
-[@Godsoe2017IntBio].  
-
 Certainly, the exact macro scale effect of interspecies interactions might depend
 on the nature of these interactions, the system being studied and the
 combination of geographical and environmental factors. Younger communities may
