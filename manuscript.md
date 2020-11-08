@@ -211,7 +211,7 @@ Artificial Intelligence tools can help us identify structure on the available
 data and predict interactions and networks for communities we did not access
 yet.
 
-### Eltonian Noise  
+### The Eltonian Noise paradox  
 
 The Eltonian Noise Hypothesis states that the effect of ecological interactions
 on species distribution is captured at coarse resolution analyses as a
@@ -233,20 +233,36 @@ This hypothesis also seems to find no support when we investigate the
 betadiversity of links in ecological networks. In parasite-hosts systems in
 Eurasia, it is possible to detect a distinct difference in interactions between
 shared species in macroecological scale, suggesting an "unpacking" of species
-when biodiversity is comparatively lower [CHAPTER 1]. In addition, it is
-expected that species with bigger ranges of distribution and those that are more
+when biodiversity is expected to be lower [CHAPTER 1]. In addition, it is
+likely that species with larger ranges of distribution and those that are more
 generalists would co-occur with a greater number of other species
 [@Dattilo2020SpeDri], while dispersal capacity of competitive species modulate
 their aggregation in space and the effect of interactions on their range limits
 [@Godsoe2017IntBio].  
 
-Certainly, the exact macro scale effect of interspecies interactions might depend
-on the nature of these interactions, the system being studied and the
+Certainly, the exact macro scale effect of interspecies interactions might
+depend on the nature of these interactions, the system being studied and the
 combination of geographical and environmental factors. Younger communities may
 be more affected by environmental limitations, once they are dominated by
 generalist species, while older metacommunities are probably affected in
 different ways in the centre of the distribution, at the edge of ranges and in
-sink and source communities.
+sink and source communities. In fact, there is a growing number of evidence
+demonstrating that biotic interactions are important factors modulating range
+shift and expansion due to rapid climate change (where evolutionary processes
+are ignored, assuming that species will not have time to adapt)
+[@Bullock2000GeoSep; @Hellmann2012InfSpe; @Afkhami2014MutEff; @Godsoe2017IntBio;
+@Siren2020IntRan].  
+
+Modelling species distribution considering the Eltonian Noise Hypothesis to be
+true can be very useful to understand general structures of biodiversity. At
+coarse resolutions, with dubious quality and sparse data, and when the space for
+error is large, these models are the best we can do. However, no species is an
+island and we should go further whenever possible, investigating whether and how
+ecological interactions exert important pressures on species ranges and spatial
+arrangements. This will help us avoid spurious inferences, especially when these
+models aim at conservation strategies. Fortunately the data we need to do that
+has been increasingly available [@Konig2019BioDat], and technologies to deal
+with them (with their biases and gaps) are following.
 
 ### Non-stationarity of interactions and networks in space, time and across resolutions  
 
