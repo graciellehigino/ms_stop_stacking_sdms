@@ -201,7 +201,7 @@ Spatially structured co-occurrence can be the result of many historical and
 geographical processes, such as environmental heterogeneity and the similarity
 of environmental preferences between species [@Bar-Massada2017NonCoo]. HSMs that
 account for co-occurrence as a proxy for interactions might wrongly capture
-these processes as biotic variables. An important analysis to be made
+these processes as biotic interactions [@Blanchet2020CooNot]. An important analysis to be made
 before going further is at which scale ecological interactions influence the
 distribution of species. Although empirical evidence exists that ecological
 interactions are important processes on population arrangements in space
@@ -227,7 +227,10 @@ community, for example)[@Davies2011PhyDiv], population density
 expansion rates - a common and very important application of HSMs - are
 intrinsically connected to interspecific interactions at the border of the
 ranges: the expansion tends to be slower when generalists predators are present
-or when mutualists are absent [@Svenning2014InfInt].  
+or when mutualists are absent [@Svenning2014InfInt]. On the other hand, range
+preservation is also associated with ecological interactions, once connected
+species can be protected of climate change and invasion [@Dunne2002NetStr;
+@Memmott2004TolPol; @Ramos-Jiliberto2012TopPla].  
 
 This hypothesis also seems to find no support when we investigate the
 betadiversity of links in ecological networks. In parasite-hosts systems in
@@ -260,13 +263,48 @@ error is large, these models are the best we can do. However, no species is an
 island and we should go further whenever possible, investigating whether and how
 ecological interactions exert important pressures on species ranges and spatial
 arrangements. This will help us avoid spurious inferences, especially when these
-models aim at conservation strategies. Fortunately the data we need to do that
+models aim at conservation strategies. Fortunately, the data we need to do that
 has been increasingly available [@Konig2019BioDat], and technologies to deal
 with them (with their biases and gaps) are following.
 
 ### Non-stationarity of interactions and networks in space, time and across resolutions  
 
+Ecological interactions are dynamic entities of ecosystems that vary in space
+and time. The reason for this fluctuability is a combination of factors that
+shape the probability of interactions: environmental changes that affect the
+metabolism of individuals and the abundance of populations [@Rall2012UniTem;
+@Poisot2016StrPro; @Muola2010AssPla], changes in habitat
+[@Tylianakis2017EcoNet], and the phylogenetic structure of communities
+[@Coelho2017NeuBio]. Notably, the variation in traits distribution (including
+phenological mismatches) are important drivers of variation in species
+interactions [CITATIONS].  
 
+Ecological networks reflect these dynamics, and, as a result, varies in space
+not always in the same fashion that species richness do [@Poisot2014SpeWhy]. The
+non-stationarity of ecological networks and their relationship with the
+environment can be measured and have been demonstrated in the last few years.
+@Dalsgaard2013HisCli found that modularity can be reduced and nestedness
+increased due to climate change speed [@Dalsgaard2013HisCli]. The phylogenetic
+diversity of networks is affected by dispersion and speciation rates
+[@Coelho2017NeuBio; @Sebastian-Gonzalez2015MacTre; @Trojelsgaard2013MacPol],
+characteristics highly correlated to both traits and geographical structure of
+the environment. These examples illustrate how networks can vary both in space
+(due to environmental filtering of species traits, for example) and time (due to
+evolutionary changes and phenology).  
+
+Interestingly, because ecological networks are the cumulative pool of local
+interactions, it is possible that network structure varies throughout scales
+[@Galiana2018SpaSca]. For example, increased species richness can promote
+species packing and specialization of interactions at local scale even for
+generalist species [CITATIONS; CHAP 1]. Moreover, the local combinations of
+species and interactions in a community can result in very different regional
+pictures, since interactions can affect one another. For example
+@Sanders2012IndCom observed that the persistence of two species of wasps
+separated by four trophic links are conditioned to one another because they
+regulate the population of competitive aphids [@Sanders2012IndCom]. The
+replacement of one species in this network can result in the local extinction of
+another, even if they are not directly linked, and this dynamic could be easily
+misinterpreted in regional scales as an environmental constraint.  
 
 ### Why go further? Because we can!  
 
