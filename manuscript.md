@@ -207,9 +207,11 @@ distribution of species. Although empirical evidence exists that ecological
 interactions are important processes on population arrangements in space
 [CITATIONS] and networks variation can be detected in macroecological scales
 [CITATIONS], their precise relationship with spatial scale remains unclear.
-Artificial Intelligence tools can help us identify structure on the available
-data and predict interactions and networks for communities we did not access
-yet.
+A second challenge is to deal with highly dynamic properties of ecological
+interactions. How can we account for dependency between local processes in
+macroecological scales? We argue that Artificial Intelligence (AI) tools can
+help us identify structure on the available data and predict interactions and
+networks for communities we did not access yet.
 
 ### The Eltonian Noise paradox  
 
@@ -259,13 +261,13 @@ are ignored, assuming that species will not have time to adapt)
 Modelling species distribution considering the Eltonian Noise Hypothesis to be
 true can be very useful to understand general structures of biodiversity. At
 coarse resolutions, with dubious quality and sparse data, and when the space for
-error is large, these models are the best we can do. However, no species is an
+error is large, these models are probably the best we can do. However, no species is an
 island and we should go further whenever possible, investigating whether and how
 ecological interactions exert important pressures on species ranges and spatial
 arrangements. This will help us avoid spurious inferences, especially when these
 models aim at conservation strategies. Fortunately, the data we need to do that
 has been increasingly available [@Konig2019BioDat], and technologies to deal
-with them (with their biases and gaps) are following.
+with them (with their biases and gaps) are following.  
 
 ### Non-stationarity of interactions and networks in space, time and across resolutions  
 
@@ -293,7 +295,7 @@ the environment. These examples illustrate how networks can vary both in space
 evolutionary changes and phenology).  
 
 Interestingly, because ecological networks are the cumulative pool of local
-interactions, it is possible that network structure varies throughout scales
+interactions, it is possible that network structure varies across scales
 [@Galiana2018SpaSca]. For example, increased species richness can promote
 species packing and specialization of interactions at local scale even for
 generalist species [CITATIONS; CHAP 1]. Moreover, the local combinations of
@@ -304,13 +306,40 @@ separated by four trophic links are conditioned to one another because they
 regulate the population of competitive aphids [@Sanders2012IndCom]. The
 replacement of one species in this network can result in the local extinction of
 another, even if they are not directly linked, and this dynamic could be easily
-misinterpreted in regional scales as an environmental constraint.  
+misinterpreted in regional scales as an environmental constraint.
 
-### Why go further? Because we can!  
+All these peculiarities about ecological interactions and networks can be faced
+as challenges or opportunities for the next years. Once we understand how and
+where interactions are important to the accuracy of species distribution models,
+we can use the dynamics described here as refinements on our models. On the
+other hand, some of these mechanisms act at a scale so small that stochasticity
+takes the stage and can be accounted for in the error term of most models. This
+trade-off reinforces the need to carefully adjust distribution models according
+to the system being studied.
 
-### How  
+### Why we can go further  
+
+A combination of global efforts and technology can make us take another step in
+combining species occurrence data and ecological interactions. In the last
+decades we have witnessed an increase in biodiversity data, including
+citizen-science projects [@Pocock2015BioRec; @Callaghan2019ImpBig] and organized
+dedicated databases mostly accessed by specialists, such as mangal and GBIF
+[@Poisot2016ManMak; @Gbi]. These data frequently describe the occurrence and the
+taxonomic identity of a species, but they also capture real-time interactions
+[@Roy2016FocPla; @Ryan2018RolCit]. Moreover, both occurrence and interaction
+data share common characteristics that can be learned and subsequently inferred.
+Because species occurrence are subject to their evolutionary history that shaped
+their ecological niche, one can roughly infer where it could occur only based on
+known occurrence point locations (that is how HSMs work, as described earlier in
+this paper). This is connected to how ecological networks also show signs of
+common ancestry and preserve a basic structure [@Riva2016ExpEvo]. The
+ever-growing number of available data and detectable structure on ecological
+networks are the main ingredients we need to develop mathematical models capable
+of learning from what we already know to predict what we do not know yet.
 
 #### Filling in eltonian gaps with mathematics - predicting interactions, networks, and doing it across scales  
+
+
 
 #### Updating probabilities of occurrences with network probabilities  
 
