@@ -332,14 +332,44 @@ Because species occurrence are subject to their evolutionary history that shaped
 their ecological niche, one can roughly infer where it could occur only based on
 known occurrence point locations (that is how HSMs work, as described earlier in
 this paper). This is connected to how ecological networks also show signs of
-common ancestry and preserve a basic structure [@Riva2016ExpEvo]. The
+common ancestry and preserve a basic structure [@Riva2016ExpEvo; @Dallas2018ComTur]. The
 ever-growing number of available data and detectable structure on ecological
 networks are the main ingredients we need to develop mathematical models capable
 of learning from what we already know to predict what we do not know yet.
 
 #### Filling in eltonian gaps with mathematics - predicting interactions, networks, and doing it across scales  
 
+A complete assessment of ecological interactions is even more difficult than
+sufficient sampling of biodiversity. The number of interactions sampled will
+always be lower than the number of possible interactions, mainly due to the
+existence of forbidden links [@Jordano2016SamNet]. In the same way as the
+knowledge about the natural history of organisms help us validate HSMs, it can
+also help us identify if the lack of links sampled is due to insufficient effort
+or natural mismatch between species. Recently, @MacDonald2020RevLin demonstrated
+how we can estimate the number of possible links in a network based on the
+number of species it has, which take us closer to predict networks themselves
+since we have much more information about species than we have of interactions
+[@MacDonald2020RevLin].
 
+In fact, assuming interactions as probabilistic events is more of an opportunity
+than an obstacle. Once we understand what is the basic mix than can result in a
+connection between ecological units (from individuals to ecosystems), we can use
+probabilities to estimate the likelihood of our ideas even when data is lacking.
+Usually, this basic mix is composed by abundance, traits matching and
+co-occurrence in space and time [CITATIONS]. When we do not have information
+about any of these properties, the prediction of interactions tends to
+stochastic, while the more information we have, the more our equations will look
+like a niche models. @Canard2012EmeStr illustrates how we can build neutral
+networks based on species abundance and richness, and found that the emergent
+properties of these networks are compatible with empirical ones. With this
+method, it is possible to identify neutral forbidden links [@Canard2012EmeStr],
+which unfolds many other questions that can be answered without previous
+empirical data.  
+
+- interactions are probabilistic events [@Poisot2016StrPro; @MacDonald2020RevLin]
+-
+- example of phenology helping predict the lost of a link due to climate change: [@SimmondsPheAsy]
+- From links to networks
 
 #### Updating probabilities of occurrences with network probabilities  
 
