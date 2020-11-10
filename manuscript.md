@@ -48,18 +48,12 @@ distribution at continental scales. Also, abiotic variables are not under the
 influence of the focus species, which make them statistically safe, and their
 relationship with the species' niche is assumed to be static in space and time,
 which adds generalization to the model. The biotic space, on the other hand, is
-usually highly dynamic and variable, but varies from stochastic at very small
-scales to predictable structures at large scales. For example, the effect of
-mutualists can be positive or negative depending on their density
-[@Wolin2015ModFac], which often fluctuates randomly throughout the history of a
-population because of genetic effects. At large scales, ecological interactions
-shape range limits of species while they are more or less likely to occur
-according to the location of the population inside the species range
-[@Godsoe2017IntBio; @Bar-Massada2017NonCoo; @Svenning2014InfInt]. Also,
+usually highly dynamic and variable, and it can be stochastic at very small
+scales to predictable structures at large scales. Additionally, because
 ecological networks are the cumulative result of local events
-[@Poisot2016HowEco; @Guimaraes2020StrEco] and its properties can vary with
+[@Poisot2016HowEco; @Guimaraes2020StrEco], its properties can vary with
 environmental factors and species evolutionary history
-[@MartinGonzalez2015MacPhy; @Dalsgaard2013HisCli].   
+[@MartinGonzalez2015MacPhy; @Dalsgaard2013HisCli].  
 
 There is a big ecological and evolutionary leap between local dynamics of
 species and the biogeographical processes that are the primary assumptions to
@@ -345,30 +339,80 @@ always be lower than the number of possible interactions, mainly due to the
 existence of forbidden links [@Jordano2016SamNet]. In the same way as the
 knowledge about the natural history of organisms help us validate HSMs, it can
 also help us identify if the lack of links sampled is due to insufficient effort
-or natural mismatch between species. Recently, @MacDonald2020RevLin demonstrated
+or natural mismatch between species. In fact, assuming interactions as
+probabilistic events is more of an opportunity than an obstacle. Once we
+understand what is the basic mix than can result in a connection between
+ecological units (from individuals to ecosystems), we can use probabilities to
+estimate the likelihood of our ideas even when data is lacking. Usually, this
+basic mix is composed by abundance, co-occurrence in space and time (conditional
+to a given environment), and traits matching [@Poisot2014SpeWhy; CITATIONS]. The
+regional pool of interactions also plays an important role on interactions
+realization through indirect effect [@Sanders2012IndCom; @Poisot2014SpeWhy], but
+they also add another layer of complexity in predictive models.  
+
+When we do not have information about any of these properties, interactions tend
+to behave as stochastic elements in our model, while the more information we
+have, the more our equations will look like a niche model. Maybe one of the most
+neutral approaches to predicting interactions is assuming that two species will
+always interact once they co-occur. On possible step forward is to account for
+spatial structure of species distribution: interactions are more or less likely
+to occur according to the location of the population inside the species range
+[@Svenning2014InfInt; @Godsoe2017IntBio; @Bar-Massada2017NonCoo]. Moving away
+from stochasticity a little bit, @Canard2012EmeStr illustrates how we can build
+neutral networks based on species abundance and richness, and found that the
+emergent properties of these networks are compatible with empirical ones. With
+this method, it is possible to identify neutral forbidden links
+[@Canard2012EmeStr], which unfolds many other questions that can be answered
+without previous empirical data. For example, we can investigate whether
+abundance fluctuation is the main driver of betadiversity of links between
+networks, or compare how networks are different from the neutral model when only
+the traits vary. It is important to notice, however, that abundance also plays a
+role on the nature of the interaction. Mutualistic interactions, for example,
+can turn into parasitism or competition when one of the players is very abundant
+[@Wolin1984ModFac].  
+
+On our way to more mechanistic models, we can start looking for evolutionary
+clues on our encrypted message. First, we can assume that similar species will
+interact in similar ways with their "pairs" due to phylogenetic inertia
+[@Gomez2010EcoInt]. If predators *A* and *B* are closely related, they are
+likely to compete for the same set of preys. In this sense, we can use machine
+learning algorithms to find in the "potential interactions" pool those that are
+more ecologically likely to occur. For example, @Desjardins-Proulx2017EcoInt
+showed that the *K* nearest neighbour (KNN) and the Random Forest (RF)
+algorithms are complementary when it comes to identifying the probability of a
+predator to interact with a certain prey and binary occurrence of interactions
+(RF predicts either interaction or non-interaction)
+[@Desjardins-Proulx2017EcoInt]. According to the authors, the usefulness of
+these methods depend on the kind of data we have in hands: KNNs need previous
+information about interactions to learn from, while RFs should use a set of
+traits. Nonetheless, these techniques isolate interactions from their biotic and
+abiotic environments, and this should be kept in mind whenever predictions are
+made.  
+
+Another step further would be implementing evolutionary models in the
+relationship between links and phylogeny. @Elmasri2020HieBay point out that
+recent approaches to link prediction using phylogenetic similarity assume a
+linear or fixed diversification rate. They proceed to develop a phylogenetic
+matching model of predicted interactions using the early-burst tree scaling
+model, where the traits diversification tree is transformed, adjusted by a
+single parameter, either to early or late diversification [@Harmon2010EarBur;
+@Elmasri2020HieBay]. The authors also accounted for uncertainty in unobserved
+interactions, which improved the accuracy of the predictions. The adjustment of
+the early-burst parameter can be based on ecological reasoning. For example,
+food webs with species clustered in trophic levels (specialized predators, for
+example) seems to have a trait evolution with a high diversification rate early
+in the tree, while networks with many omnivorous species are thought to have a
+late diversification of traits [@Ingram2012WheSho]. These predictions are highly
+mechanistic, accounting for evolution and ecology of interactions.  
+
+Moving from the stochastic-mechanistic scale of interactions, the next paragraphs will focus on probabilistic networks.
+Recently, @MacDonald2020RevLin demonstrated
 how we can estimate the number of possible links in a network based on the
 number of species it has, which take us closer to predict networks themselves
 since we have much more information about species than we have of interactions
 [@MacDonald2020RevLin].
 
-In fact, assuming interactions as probabilistic events is more of an opportunity
-than an obstacle. Once we understand what is the basic mix than can result in a
-connection between ecological units (from individuals to ecosystems), we can use
-probabilities to estimate the likelihood of our ideas even when data is lacking.
-Usually, this basic mix is composed by abundance, traits matching and
-co-occurrence in space and time [CITATIONS]. When we do not have information
-about any of these properties, the prediction of interactions tends to
-stochastic, while the more information we have, the more our equations will look
-like a niche models. @Canard2012EmeStr illustrates how we can build neutral
-networks based on species abundance and richness, and found that the emergent
-properties of these networks are compatible with empirical ones. With this
-method, it is possible to identify neutral forbidden links [@Canard2012EmeStr],
-which unfolds many other questions that can be answered without previous
-empirical data.  
-
 - interactions are probabilistic events [@Poisot2016StrPro; @MacDonald2020RevLin]
--
-- example of phenology helping predict the lost of a link due to climate change: [@SimmondsPheAsy]
 - From links to networks
 
 #### Updating probabilities of occurrences with network probabilities  
