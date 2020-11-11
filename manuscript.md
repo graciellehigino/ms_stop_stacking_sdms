@@ -331,15 +331,22 @@ ever-growing number of available data and detectable structure on ecological
 networks are the main ingredients we need to develop mathematical models capable
 of learning from what we already know to predict what we do not know yet.
 
-#### Filling in eltonian gaps with mathematics - predicting interactions, networks, and doing it across scales  
+#### Filling in eltonian gaps with mathematics: predicting interactions, networks, and doing it across scales  
+
 
 A complete assessment of ecological interactions is even more difficult than
 sufficient sampling of biodiversity. The number of interactions sampled will
 always be lower than the number of possible interactions, mainly due to the
-existence of forbidden links [@Jordano2016SamNet]. In the same way as the
-knowledge about the natural history of organisms help us validate HSMs, it can
-also help us identify if the lack of links sampled is due to insufficient effort
-or natural mismatch between species. In fact, assuming interactions as
+existence of forbidden links [@Jordano2016SamNet]. This lack of information,
+known as the Eltonian Shortfall, is aggravated by biases and differences in
+sampling methods [@Hortal2015SevSho]. Nevertheless, in the same way as the
+knowledge about the natural history of organisms help us validate HSMs,
+understanding a species' behaviour, traits and phylogenetic relationships can
+help us identify if the lack of links sampled is due to insufficient effort or
+natural mismatch between species. Additionally, interactions vary in space and
+time, which adds to the uncertainty of an unregistered interaction. Hence,
+rather than assuming interactions to be binary variables, we can think of them
+as probabilities [@Poisot2016StrPro]. In fact, assuming interactions as
 probabilistic events is more of an opportunity than an obstacle. Once we
 understand what is the basic mix than can result in a connection between
 ecological units (from individuals to ecosystems), we can use probabilities to
@@ -371,23 +378,39 @@ role on the nature of the interaction. Mutualistic interactions, for example,
 can turn into parasitism or competition when one of the players is very abundant
 [@Wolin1984ModFac].  
 
+An intermediate step could be to find detectable interactions in a species pool.
+@XiaoFu2019LinPre proposed a combination of a Poisson N-mixture model and
+collaborative filtering to predict potential links under imperfect detection.
+This machine learning model allowed them to successfully infer interactions
+based on a few observed occurrences sampled in the field [@XiaoFu2019LinPre].
+This approach deals with interactions as countable units, ignoring evolutive and
+ecological mechanisms that could lead do variation in the probability of their
+realization. However, it can be a good exploratory method to investigate the
+completeness of interaction sampling.  
+
 On our way to more mechanistic models, we can start looking for evolutionary
 clues on our encrypted message. First, we can assume that similar species will
 interact in similar ways with their "pairs" due to phylogenetic inertia
-[@Gomez2010EcoInt]. If predators *A* and *B* are closely related, they are
-likely to compete for the same set of preys. In this sense, we can use machine
-learning algorithms to find in the "potential interactions" pool those that are
-more ecologically likely to occur. For example, @Desjardins-Proulx2017EcoInt
-showed that the *K* nearest neighbour (KNN) and the Random Forest (RF)
-algorithms are complementary when it comes to identifying the probability of a
-predator to interact with a certain prey and binary occurrence of interactions
-(RF predicts either interaction or non-interaction)
+[@Gomez2010EcoInt; @Peralta2016MerEvo]. If predators *A* and *B* are closely
+related, they are likely to compete for the same set of preys. In this sense, we
+can use machine learning algorithms to find in the "potential interactions" pool
+those that are more ecologically likely to occur. For example,
+@Desjardins-Proulx2017EcoInt showed that the *K* nearest neighbour (KNN) and the
+Random Forest (RF) algorithms are complementary when it comes to identifying the
+probability of a predator to interact with a certain prey and binary occurrence
+of interactions (RF predicts either interaction or non-interaction)
 [@Desjardins-Proulx2017EcoInt]. According to the authors, the usefulness of
 these methods depend on the kind of data we have in hands: KNNs need previous
 information about interactions to learn from, while RFs should use a set of
-traits. Nonetheless, these techniques isolate interactions from their biotic and
-abiotic environments, and this should be kept in mind whenever predictions are
-made.  
+traits. Another example of link prediction based on trait matching is
+@Dallas2017PreCry, where the authors identified cryptic associations between
+hosts and parasites based on a Bayesian model. Similar to @XiaoFu2019LinPre
+model, this model also allow us to investigate the completeness of interaction
+sampling, but now based on traits matching and not only on occurrence
+observations. @Pichler2019MacLea provide an extensive methodological comparison of
+Machine Learning models to predict interactions based on traits matching.
+Nonetheless, these techniques isolate interactions from their biotic and abiotic
+environments, and this should be kept in mind whenever predictions are made.  
 
 Another step further would be implementing evolutionary models in the
 relationship between links and phylogeny. @Elmasri2020HieBay point out that
@@ -405,17 +428,48 @@ in the tree, while networks with many omnivorous species are thought to have a
 late diversification of traits [@Ingram2012WheSho]. These predictions are highly
 mechanistic, accounting for evolution and ecology of interactions.  
 
-Moving from the stochastic-mechanistic scale of interactions, the next paragraphs will focus on probabilistic networks.
-Recently, @MacDonald2020RevLin demonstrated
-how we can estimate the number of possible links in a network based on the
-number of species it has, which take us closer to predict networks themselves
-since we have much more information about species than we have of interactions
-[@MacDonald2020RevLin].
+Connected to the Eltonian Shortfall described at the beginning of this session,
+there are global gaps and biases on network sampling [@Poisot2020EnvBia].
+Because ecological networks are made of nodes and edges, and both can be treated
+as probabilities (addressing the occurrence of a node and the realization of an
+interaction), we can investigate the chances of different networks to emerge
+from a set of species co-occurring in a given location [@Poisot2016StrPro].
+Recently, @MacDonald2020RevLin demonstrated how we can estimate the number of
+possible links in a network based on the number of species it has, which take us
+closer to predict networks themselves since we have much more information about
+species than we have of interactions [@MacDonald2020RevLin]. Knowing the number
+of possible links given the species richness in a given location allow us to
+calculate the probability distribution for each network property, which can be
+further connected to what we know about the relationship between networks'
+properties and species spatial distribution
 
-- interactions are probabilistic events [@Poisot2016StrPro; @MacDonald2020RevLin]
-- From links to networks
+One question that is frequently stressed by macroecologists is how to connect
+local processes, such as interactions, to large scale biodiversity structures.
+The sampling of both interactions and environmental variables are usually made
+in opposing ends of spatial resolution, which makes them incomparable from a
+statistical point of view [@Peterson2012EcoNic]. Also, because of the nature of
+the sampling, it is hard to transform those variables to make them vary in
+compatible scales. How can we deal with this problem when predicting
+interactions and networks for macroscales? In fact, the basic mix components
+that leads to the occurrence of an interaction varies with the spatial
+resolution in which it is assessed. Consequently, the distribution of
+probabilities for interactions and network properties would change, possibly
+leading to different interpretation of biodiversity distribution. However, the
+different ways in which networks properties vary through scales have also been
+investigated, and simulations can help us understand that more deeply
+[@Poisot2014SpeWhy; @Peralta2016MerEvo; @Guimaraes2020StrEco]. *Because*
+interactions vary more in space than species occurrence while retaining this
+information [@Poisot2017HosPar], they can represent a more accurate
+macroecological variance to interplay with environmental variables. Moreover,
+because interaction predictions accounts only for *potential interactions*, they
+are easily translated into regional networks (that also represent potential
+interactions). Finally, some properties of networks are correlated to
+phylogenetic diversity of communities [CHAP 1], which also represents a level of
+organization compatible with the geographical scale of environmental variables.  
 
 #### Updating probabilities of occurrences with network probabilities  
+
+[@Jimenez-Valverde2020DecAbu]
 
 ## Take-home messages   
 
