@@ -169,9 +169,9 @@ interactions occur across taxonomic and geographic scales
 extents and in fine grain (both temporal and spatial) is daunting. In addition,
 it is known that networks vary with climate, in space and with phylogenetic
 distance [@Poisot2014SpeWhy; CITATIONS]. Despite the dynamic nature of networks'
-structures (that are predictable outcomes of common processes), methods such as stacked
-(S-SDMs) and joint Species Distribution Models (JSDMs) are very common to
-address the influence of one species over another [CITATIONS]. These methods
+structures (that are predictable outcomes of common processes), methods such as
+stacked (S-SDMs) and joint Species Distribution Models (JSDMs) are very common
+to address the influence of one species over another [CITATIONS]. These methods
 assume that, if a pair of species are known to interact, they will always do so
 once they co-occur [CITATIONS]. For example, in order to do a stacked SDM, one
 can model the assembly as a single unit, use the predicted distribution of each
@@ -186,7 +186,7 @@ complexity by modelling assembly rules as an intermediate step towards more
 realistic HSMs (see @Zurell2020TesSpe for a comparison between both methods).
 Nevertheless, our time machines can take us even further and incorporate actual
 species interaction and predicted network properties in species distribution
-models.
+models.  
 
 ## Going further  
 
@@ -195,17 +195,17 @@ Spatially structured co-occurrence can be the result of many historical and
 geographical processes, such as environmental heterogeneity and the similarity
 of environmental preferences between species [@Bar-Massada2017NonCoo]. HSMs that
 account for co-occurrence as a proxy for interactions might wrongly capture
-these processes as biotic interactions [@Blanchet2020CooNot]. An important analysis to be made
-before going further is at which scale ecological interactions influence the
-distribution of species. Although empirical evidence exists that ecological
-interactions are important processes on population arrangements in space
-[CITATIONS] and networks variation can be detected in macroecological scales
-[CITATIONS], their precise relationship with spatial scale remains unclear.
-A second challenge is to deal with highly dynamic properties of ecological
-interactions. How can we account for dependency between local processes in
-macroecological scales? We argue that Artificial Intelligence (AI) tools can
-help us identify structure on the available data and predict interactions and
-networks for communities we did not access yet.
+these processes as biotic interactions [@Blanchet2020CooNot]. An important
+analysis to be made before going further is at which scale ecological
+interactions influence the distribution of species. Although empirical evidence
+exists that ecological interactions are important processes on population
+arrangements in space [CITATIONS] and networks variation can be detected in
+macroecological scales [CITATIONS], their precise relationship with spatial
+scale remains unclear. A second challenge is to deal with highly dynamic
+properties of ecological interactions. How can we account for dependency between
+local processes in macroecological scales? We argue that Artificial Intelligence
+(AI) tools can help us identify structure on the available data and predict
+interactions and networks for communities we did not access yet.
 
 ### The Eltonian Noise paradox  
 
@@ -215,18 +215,18 @@ covariation with environmental factors [@Soberon2009NicDis]. This logic reverts
 as an assumption that always that two given species co-occur, they will
 interact, which has been demonstrated to be not true [@Blanchet2020CooNot]. In
 fact, the contrary is likely to be true: the nature of interactions happening at
-a given location affects co-occurrence [@Chesson2008IntPre; @Godsoe2017IntBio;
-@Svenning2014InfInt; @Bullock2000GeoSep], and they vary in space and time due to
-climate change, phylogenetic diversity (addition or extinction of clades in the
-community, for example)[@Davies2011PhyDiv], population density
-[@Carnicer2009TemDyn], and many other factors. Additionally, analyses of range
-expansion rates - a common and very important application of HSMs - are
-intrinsically connected to interspecific interactions at the border of the
-ranges: the expansion tends to be slower when generalists predators are present
-or when mutualists are absent [@Svenning2014InfInt]. On the other hand, range
-preservation is also associated with ecological interactions, once connected
-species can be protected of climate change and invasion [@Dunne2002NetStr;
-@Memmott2004TolPol; @Ramos-Jiliberto2012TopPla].  
+a given location affects co-occurrence [@Bullock2000GeoSep; @Chesson2008IntPre;
+@Godsoe2012HowSpe; @Svenning2014InfInt; @Godsoe2017IntBio], and they vary in
+space and time due to climate change, phylogenetic diversity (addition or
+extinction of clades in the community, for example)[@Davies2011PhyDiv],
+population density [@Carnicer2009TemDyn], and many other factors. Additionally,
+analyses of range expansion rates - a common and very important application of
+HSMs - are intrinsically connected to interspecific interactions at the border
+of the ranges: the expansion tends to be slower when generalists predators are
+present or when mutualists are absent [@Svenning2014InfInt]. On the other hand,
+range preservation is also associated with ecological interactions, once
+connected species can be protected of climate change and invasion
+[@Dunne2002NetStr; @Memmott2004TolPol; @Ramos-Jiliberto2012TopPla].  
 
 This hypothesis also seems to find no support when we investigate the
 betadiversity of links in ecological networks. In parasite-hosts systems in
@@ -458,17 +458,51 @@ leading to different interpretation of biodiversity distribution. However, the
 different ways in which networks properties vary through scales have also been
 investigated, and simulations can help us understand that more deeply
 [@Poisot2014SpeWhy; @Peralta2016MerEvo; @Guimaraes2020StrEco]. *Because*
-interactions vary more in space than species occurrence while retaining this
-information [@Poisot2017HosPar], they can represent a more accurate
+interactions vary more in space than species occurrence (while adding to this
+information) [@Poisot2017HosPar], they can represent biodiversity with a more useful
 macroecological variance to interplay with environmental variables. Moreover,
 because interaction predictions accounts only for *potential interactions*, they
 are easily translated into regional networks (that also represent potential
-interactions). Finally, some properties of networks are correlated to
+interactions). Finally, some properties of networks are correlated to the
 phylogenetic diversity of communities [CHAP 1], which also represents a level of
 organization compatible with the geographical scale of environmental variables.  
 
 #### Updating probabilities of occurrences with network probabilities  
 
+At this point the reader may be wondering how probabilistic networks and species
+distribution models fit together. Some efforts in this sense have already been
+made, and in this session we will quickly review them while pointing to future
+directions. We will not consider, however, the majority of papers that aim at
+discussing the integration of biotic interactions on SDMs because their
+definitions of ecological interactions are not compatible with our view.
+Usually, these discussions consider the mere addition of the occurrence of a
+competitor or mutualist species as a predictor variable on the model to be
+sufficient to account for ecological interactions [@Guisan2006MakBet;
+@Wisz2013RolBio; CITATIONS]. Although this practice have demonstrated to improve
+the accuracy of distribution models [CITATIONS], the ecological interpretation
+is still not convincing. First, as we discussed earlier, the realization of an
+interaction is conditional to many factors, including abundance and other
+interactions, and it's strength and signal can vary in space and time. Second,
+adding a competitor as an equivalent of an absence of the focus species just
+informs the model about environmental conditions that are supposedly not
+suitable for the establishment of a population, not that an ecological
+interaction is taking place there in such a manner that it will influence the
+survival of a pair of individuals.  
+
+A good theoretical exercise was done in @Godsoe2012HowSpe, where authors
+calculated the probability that a given site will be environmentally suitable in
+the presence of a competitor, based on their population dynamic models
+[@Godsoe2012HowSpe]. Although it is close to assuming a binary nature for
+interactions, it does account for dynamics and simulate results for different
+abundances, thus approximating to a probabilistic approach. There are only a few
+attempts on the literature, that we are aware of, that tries to build
+mechanistic species distribution models that considers interspecies interaction
+as a probabilistic entity.
+Three main barriers are pointed in the literature regarding the advancement of
+integrated SDMs: how to account for spatial heterogeneity, how to deal with
+indirect interactions and how
+
+[@Cazelles2016IntBio]
 [@Jimenez-Valverde2020DecAbu]
 
 ## Take-home messages   
