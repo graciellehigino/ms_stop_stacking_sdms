@@ -489,18 +489,28 @@ suitable for the establishment of a population, not that an ecological
 interaction is taking place there in such a manner that it will influence the
 survival of a pair of individuals.  
 
-A good theoretical exercise was done in @Godsoe2012HowSpe, where authors
-calculated the probability that a given site will be environmentally suitable in
-the presence of a competitor, based on their population dynamic models
-[@Godsoe2012HowSpe]. Although it is close to assuming a binary nature for
-interactions, it does account for dynamics and simulate results for different
-abundances, thus approximating to a probabilistic approach. There are only a few
-attempts on the literature, that we are aware of, that tries to build
-mechanistic species distribution models that considers interspecies interaction
-as a probabilistic entity.
-Three main barriers are pointed in the literature regarding the advancement of
-integrated SDMs: how to account for spatial heterogeneity, how to deal with
-indirect interactions and how
+As reviewed by @Cabral2017MecSim, many models in ecology have considered
+competition and facilitation in range shifts, but the assessment of trophic
+interactions remains insufficient. An example of good theoretical exercise was
+done in @Godsoe2012HowSpe, where authors calculated the probability that a given
+site will be environmentally suitable in the presence of a competitor, based on
+their population dynamic models [@Godsoe2012HowSpe]. Although it is close to
+assuming a binary nature for interactions, it does account for dynamics and
+simulate results for different abundances, thus approximating to a probabilistic
+approach. There are only a few attempts on the literature that tries to build
+mechanistic species distribution models accounting for interspecies interaction
+(independent of its nature) as a probabilistic entity [@Cabral2017MecSim]. A
+first step in this direction was taken in @Gravel2011TroThe, where authors
+demonstrated how interactions can be included in the Theory of Island
+Biogeography [@MacArthur1967TheIsl]. This experiment provided a starting framework for
+the next generation of species distribution models to include migration dynamics and trophic levels.  
+
+In @Cazelles2016TheSpe, the authors go a little bit further and elaborate a model t
+
+Three main barriers are
+pointed in the literature regarding the advancement of integrated SDMs: how to
+account for spatial heterogeneity, how to deal with indirect interactions and
+how
 
 [@Cazelles2016IntBio]
 [@Jimenez-Valverde2020DecAbu]
