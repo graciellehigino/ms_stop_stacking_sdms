@@ -507,12 +507,18 @@ the next generation of species distribution models to include migration dynamics
 
 In @Cazelles2016TheSpe, the authors go a little bit further and elaborate a model t
 
-Three main barriers are
-pointed in the literature regarding the advancement of integrated SDMs: how to
-account for spatial heterogeneity, how to deal with indirect interactions and
-how
+An interesting approach was elaborated in @Staniczenko2017LinMac, where the
+authors address interactions with Bayesian Networks models that update the
+probability of occurrence resulted from a HSM. Bayesian Networks (BN) can be
+derived from empirical data or inferred from macroecological data, but they
+should only represent directional interactions. This was pointed as a limitation
+for the use of this workflow, as interactions are often retroactive [CITATION],
+but it showed good efficacy when the research subject allows this simplification
+[@Staniczenko2017LinMac]. In these networks, the effects of direct and indirect
+interactions are spread among the species, and the nodes represent the
+probabilities of occurrence. This allows that multiple species are considered at
+the same time and to derive the network from the assemblage resulted of a HSM.  
 
-[@Cazelles2016IntBio]
 [@Jimenez-Valverde2020DecAbu]
 
 ## Take-home messages   
