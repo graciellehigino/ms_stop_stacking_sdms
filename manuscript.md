@@ -505,11 +505,24 @@ demonstrated how interactions can be included in the Theory of Island
 Biogeography [@MacArthur1967TheIsl]. This experiment provided a starting framework for
 the next generation of species distribution models to include migration dynamics and trophic levels.  
 
-In @Cazelles2016TheSpe, the authors go a little bit further and elaborate a model t
+In @Cazelles2016TheSpe, the authors elaborate on @Gravel2011TroThe model and
+include environmental constraints in a metacommunities dynamic model in a
+biogeographical scale. Their model add some necessary complexity by evaluating
+frames of communities in different times, calculating the probability of change
+in community composition due to migration, interactions and environmental
+requirements. This is a very useful model to understand spatial dynamics of
+species richness, and could be used as a validation strategy for HSMs with only
+two time frames: the current known distribution and the potential distribution
+inferred by the HSM. Because the probability of occurrence of one species is
+derived from the probability of occurrence of all other species
+[@Cazelles2016TheSpe], we could infer the probability of occurrence of a focus
+species based on its potential distribution and local species pools. This
+strategy would require to predict interactions between species that did not
+previously co-occur.  
 
-An interesting approach was elaborated in @Staniczenko2017LinMac, where the
-authors address interactions with Bayesian Networks models that update the
-probability of occurrence resulted from a HSM. Bayesian Networks (BN) can be
+In this sense, an interesting approach was elaborated in @Staniczenko2017LinMac,
+where the authors address interactions with Bayesian Networks models that update
+the probability of occurrence resulted from a HSM. Bayesian Networks (BN) can be
 derived from empirical data or inferred from macroecological data, but they
 should only represent directional interactions. This was pointed as a limitation
 for the use of this workflow, as interactions are often retroactive [CITATION],
