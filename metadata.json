@@ -1,14 +1,11 @@
 {
-  "title": "Preprint template",
+  "title": "Predicted interactions to iteratively update species distribution models",
   "license": "CC-BY",
   "language": "en",
   "creators": [
     {
       "affiliations": [
         "Universidade Federal de Goiás",
-        "Université de Montréal",
-        "Québec Centre for Biodiversity Sciences",
-        "Computational Biodiversity Science and Services"
       ],
       "familyname": "Higino",
       "givennames": "Gracielle",
@@ -41,11 +38,10 @@
       ],
       "familyname": "Poisot",
       "givennames": "Timothée",
-      "email": "timothee.poisot@umontreal.ca",
       "orcid": "0000-0002-0735-5184"
     }
   ],
-  "description": "TODO abstract",
+  "description": "Abstract.",
   "keywords": [
     "ecological interactions",
     "species distribution models"

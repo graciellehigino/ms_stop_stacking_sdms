@@ -502,10 +502,11 @@ mechanistic species distribution models accounting for interspecies interaction
 (independent of its nature) as a probabilistic entity [@Cabral2017MecSim]. A
 first step in this direction was taken in @Gravel2011TroThe, where authors
 demonstrated how interactions can be included in the Theory of Island
-Biogeography [@MacArthur1967TheIsl]. This experiment provided a starting framework for
-the next generation of species distribution models to include migration dynamics and trophic levels.  
+Biogeography [@MacArthur1967TheIsl]. This experiment provided a starting
+framework for the next generation of species distribution models to include
+migration dynamics and trophic levels.   
 
-In @Cazelles2016TheSpe, the authors elaborate on @Gravel2011TroThe model and
+In @Cazelles2016IntBio, the authors elaborate on @Gravel2011TroThe model and
 include environmental constraints in a metacommunities dynamic model in a
 biogeographical scale. Their model add some necessary complexity by evaluating
 frames of communities in different times, calculating the probability of change
@@ -515,7 +516,7 @@ species richness, and could be used as a validation strategy for HSMs with only
 two time frames: the current known distribution and the potential distribution
 inferred by the HSM. Because the probability of occurrence of one species is
 derived from the probability of occurrence of all other species
-[@Cazelles2016TheSpe], we could infer the probability of occurrence of a focus
+[@Cazelles2016IntBio], we could infer the probability of occurrence of a focus
 species based on its potential distribution and local species pools. This
 strategy would require to predict interactions between species that did not
 previously co-occur.  
@@ -532,8 +533,12 @@ interactions are spread among the species, and the nodes represent the
 probabilities of occurrence. This allows that multiple species are considered at
 the same time and to derive the network from the assemblage resulted of a HSM.  
 
-[@Jimenez-Valverde2020DecAbu]
-
-## Take-home messages   
+We envision a combination of all techniques described here, which would allow a
+more reliable estimation of the area where a species would probably occur
+(illustrated as the area 2 in @fig:bam). This combination would involve two
+steps, as delineated by @Staniczenko2017LinMac, with an initial HSM to assess
+the potential distribution of a focus species, and the use of machine learning
+algorithms to update the probability of occurrence from the local species pool,
+as suggest @Cazelles2016IntBio.  
 
 ## References
