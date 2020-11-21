@@ -18,6 +18,25 @@
     {
       "affiliations": [
         "Université de Montréal",
+        "Université de Sherbrooke",
+        "Québec Centre for Biodiversity Sciences"
+      ],
+      "familyname": "Banville",
+      "givennames": "Francis",
+      "orcid": "0000-0001-9051-0597"
+    },
+    {
+      "affiliations": [
+        "Université de Montréal",
+        "Québec Centre for Biodiversity Sciences"
+      ],
+      "familyname": "Dansereau",
+      "givennames": "Gabriel",
+      "orcid": "0000-0002-2212-3584"
+    },
+    {
+      "affiliations": [
+        "Université de Montréal",
         "Québec Centre for Biodiversity Sciences"
       ],
       "familyname": "Poisot",
@@ -26,7 +45,7 @@
       "orcid": "0000-0002-0735-5184"
     }
   ],
-  "description": "Species interactions integrated in SDMs: everybody knows it's important, but nobody knows exactly how to do it.",
+  "description": "TODO abstract",
   "keywords": [
     "ecological interactions",
     "species distribution models"
