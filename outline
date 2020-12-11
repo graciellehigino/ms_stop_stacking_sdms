@@ -24,9 +24,10 @@ an SDM.
 
 ## Introduction
 
-BAM fig - the ligics behind SDMs concept fig - where's this paper going Why
-should we integrate interactions with SDMs - the right way? Why is this paper
-important?
+BAM fig - the logics behind SDMs
+concept fig - where's this paper going
+Why should we integrate interactions with SDMs - the right way?
+Why is this paper important?
 
 ## SDMs: the mechanics, innovations and drawbacks
 
@@ -60,7 +61,7 @@ What do we have now that allows us to go further?
 ### How
 
 #### Filling in eltonian gaps with mathematics - predicting interactions,
-networks, and doing it across scales  
+networks, and doing it across scales
 
 #### Updating probabilities of occurrences with network probabilities
 Interactions predictions should be used to update our probabilities of
