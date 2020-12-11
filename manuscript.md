@@ -15,13 +15,19 @@ species' distribution based on their niche, considering their occurrences as
 sample points of suitable abiotic variables and their absences as sample points
 of unsuitable variables. However, these observations (environmental variables
 and geographic location) only unveils part of the mystery, and the missing link
-are ecological interactions. Habitat suitability models (hereafter HSMs) can be
-untangled in three aspects of a species occurrence: its biotic environment - the
-connections it makes with other species -, its abiotic environment - the
-connection it makes with non-living resources -, and its mobility range - how
-far it can go (@fig:bam)[@Peterson2012EcoNic]. The biotic environment act on
-these models as potential and realized interactions, constrained or enabled by
-abiotic factors, geographical conformation and migratory ability.   
+are ecological interactions.  
+
+Species distribution models can be untangled in three aspects of a species
+occurrence: its biotic environment - the connections it makes with other species -,
+its abiotic environment - the connection it makes with non-living resources -,
+and its mobility range - how far it can go (@fig:bam)[@Peterson2012EcoNic]. The
+biotic environment act on these models as potential and realized interactions,
+constrained or enabled by abiotic factors, geographical conformation and
+migratory ability.  Nevertheless, most distribution models do not address the
+biotic interactions that potentially shape a species range (or rather do so
+indirectly), thus measuring only how adequate an environment is for a given
+population. Because of that, they are denominated Habitat Suitability Models
+(hereafter HSMs).
 
 ![The "BAM diagram", adapted from [@JorgeSoberon2007GriElt]. Open circles
 are absences and solid circles are observed presences. Big circles correspond to
@@ -35,23 +41,22 @@ on accessible, abiotically suitable areas; the space (3) is where the species
 could eventually go and establish new interactions, while (4) is the area where
 the occurrence of the species is limited only by abiotic factors.](figures/bam.png){#fig:bam}  
 
-Accounting for environmental variables and geographic limits on biodiversity
-distribution models is a good approach because these characteristics are not
-(highly) dynamic entities from the evolutionary point of view. Because the
-climate (used to) change at a very slow pace, as well as species' niche, we
-could expect to find the same pool of species that are able to live in a certain
-region, even if populations fluctuated at a smaller temporal scale. This is
-because the cumulative effect of small scale variation on climate, population
-dynamics and habitat suitability itself results in macroecological outcomes such
-as combinations of extinction and cladogenesis, which lead to biodiversity
-distribution at continental scales. Also, abiotic variables are not under the
-influence of the focus species, which make them statistically safe, and their
-relationship with the species' niche is assumed to be static in space and time,
-which adds generalization to the model. The biotic space, on the other hand, is
-usually highly dynamic and variable, and it can be stochastic at very small
-scales to predictable structures at large scales. Additionally, because
-ecological networks are the cumulative result of local events
-[@Poisot2016HowEco; @Guimaraes2020StrEco], its properties can vary with
+The use of HSMs is very convenient because environmental variables and
+geographic limits are not (highly) dynamic variables from the evolutionary point
+of view. Because the climate (used to) change at a very slow pace, as well as
+species' niche, we could expect to find the same pool of species that are able
+to live in a certain region, even if populations fluctuated at a smaller
+temporal scale. This is because the cumulative effect of small scale variation
+on climate, population dynamics and habitat suitability itself results in
+macroecological outcomes such as combinations of extinction and cladogenesis,
+which lead to biodiversity distribution at continental scales. Also, abiotic
+variables are not under the influence of the focus species, which make them
+statistically safe, and their relationship with the species' niche is assumed to
+be static in space and time, which adds generalization to the model. The biotic
+space, on the other hand, is usually highly dynamic and variable, and it can be
+stochastic at very small scales to predictable structures at large scales.
+Additionally, because ecological networks are the cumulative result of local
+events [@Poisot2016HowEco; @Guimaraes2020StrEco], its properties can vary with
 environmental factors and species evolutionary history
 [@MartinGonzalez2015MacPhy; @Dalsgaard2013HisCli].  
 
@@ -404,13 +409,14 @@ these methods depend on the kind of data we have in hands: KNNs need previous
 information about interactions to learn from, while RFs should use a set of
 traits. Another example of link prediction based on trait matching is
 @Dallas2017PreCry, where the authors identified cryptic associations between
-hosts and parasites based on a Bayesian model. Similar to @XiaoFu2019LinPre
-model, this model also allow us to investigate the completeness of interaction
-sampling, but now based on traits matching and not only on occurrence
-observations. @Pichler2019MacLea provide an extensive methodological comparison of
-Machine Learning models to predict interactions based on traits matching.
-Nonetheless, these techniques isolate interactions from their biotic and abiotic
-environments, and this should be kept in mind whenever predictions are made.  
+hosts and parasites based on a Bayesian model. Similar to the approach on
+@XiaoFu2019LinPre, this model also allow us to investigate the completeness of
+interaction sampling, but now based on traits matching and not only on
+occurrence observations. @Pichler2019MacLea provide an extensive methodological
+comparison of Machine Learning models to predict interactions based on traits
+matching. Nonetheless, these techniques isolate interactions from their biotic
+and abiotic environments, and this should be kept in mind whenever predictions
+are made.  
 
 Another step further would be implementing evolutionary models in the
 relationship between links and phylogeny. @Elmasri2020HieBay point out that
@@ -437,7 +443,7 @@ from a set of species co-occurring in a given location [@Poisot2016StrPro].
 Recently, @MacDonald2020RevLin demonstrated how we can estimate the number of
 possible links in a network based on the number of species it has, which take us
 closer to predict networks themselves since we have much more information about
-species than we have of interactions [@MacDonald2020RevLin]. Knowing the number
+species than we have on interactions [@MacDonald2020RevLin]. Knowing the number
 of possible links given the species richness in a given location allow us to
 calculate the probability distribution for each network property, which can be
 further connected to what we know about the relationship between networks'
@@ -533,12 +539,21 @@ interactions are spread among the species, and the nodes represent the
 probabilities of occurrence. This allows that multiple species are considered at
 the same time and to derive the network from the assemblage resulted of a HSM.  
 
+## Synthesis
+
 We envision a combination of all techniques described here, which would allow a
 more reliable estimation of the area where a species would probably occur
-(illustrated as the area 2 in @fig:bam). This combination would involve two
-steps, as delineated by @Staniczenko2017LinMac, with an initial HSM to assess
-the potential distribution of a focus species, and the use of machine learning
-algorithms to update the probability of occurrence from the local species pool,
-as suggest @Cazelles2016IntBio.  
+(illustrated as the area 2 in @fig:bam and in @fig:synthesis). This combination
+would involve three steps, as delineated by @Staniczenko2017LinMac, with an
+initial HSM to assess the potential distribution of one or more focus species,
+and the use of machine learning algorithms to update the probability of
+occurrence from information on potential interactions. In this sense, there are
+two possible venues that could be followed: (i) calculate the probability of
+interaction from the local species pool, as suggest @Cazelles2016IntBio, or (ii)
+calculate the probabilities of connections, then the probability of interactions
+where the chance of connection is higher than a threshold, and finally using
+this probability as a prior on a species distribution model.  
+
+![](figures/conc_fig3_chapX.png){#fig:synthesis}  
 
 ## References
