@@ -549,11 +549,29 @@ initial HSM to assess the potential distribution of one or more focus species,
 and the use of machine learning algorithms to update the probability of
 occurrence from information on potential interactions. In this sense, there are
 two possible venues that could be followed: (i) calculate the probability of
-interaction from the local species pool, as suggest @Cazelles2016IntBio, or (ii)
-calculate the probabilities of connections, then the probability of interactions
-where the chance of connection is higher than a threshold, and finally using
-this probability as a prior on a species distribution model.  
+interaction from the local species pool, as suggest @Cazelles2016IntBio, and use
+it to update the probabilities from the HSM, or (ii) calculate the probabilities
+of connections, then the probability of interactions where the chance of
+connection is higher than a threshold, and finally using this probability as a
+prior on a species distribution model.  
 
-![](figures/conc_fig3_chapX.png){#fig:synthesis}  
+![In the proposed workflow, probabilities of occurrence would be updated by the
+probabilities of new interactions where the Habitat Suitability Model suggests potential
+occurrence. For the sample sites where a species is predicted to occur where it
+did not occur before, the probability of this species to belong to a network
+where it has at least one link would be calculated based on the species richness
+of those cells. For a probability of having a link higher than a given
+threshold, the probability of interaction with important clades would then be
+assessed, and finally this probability updates the probability of
+occurrence.](figures/conc_fig4_chapX.png){#fig:synthesis}  
+
+- update probability of occurrence with probability of interaction with local sp pools
+- update probability of occurrence first with the chance of finding a pair, then with the probability of interaction
+- Rescuing the logics behind SDMs
+- Why should we integrate interactions with SDMs - the right way?
+- What don't we have yet?
+- What are the roads never taken?
+- Where should we invest in order to achieve the best SDMs we can?
+- What are the most promising areas for development?
 
 ## References
