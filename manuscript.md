@@ -553,20 +553,47 @@ interaction from the local species pool, as suggest @Cazelles2016IntBio, and use
 it to update the probabilities from the HSM, or (ii) calculate the probabilities
 of connections, then the probability of interactions where the chance of
 connection is higher than a threshold, and finally using this probability as a
-prior on a species distribution model.  
+prior on a species distribution model. We propose a workflow that follows the
+later path, with four steps described below.  
 
 ![In the proposed workflow, probabilities of occurrence would be updated by the
-probabilities of new interactions where the Habitat Suitability Model suggests potential
-occurrence. For the sample sites where a species is predicted to occur where it
-did not occur before, the probability of this species to belong to a network
-where it has at least one link would be calculated based on the species richness
-of those cells. For a probability of having a link higher than a given
-threshold, the probability of interaction with important clades would then be
-assessed, and finally this probability updates the probability of
-occurrence.](figures/conc_fig4_chapX.png){#fig:synthesis}  
+probabilities of new interactions where the Habitat Suitability Model suggests
+potential occurrence. For the sample sites where a species is predicted to
+occur, but did not occur before, the probability of this species to belong to a
+network where it has at least one link would be calculated based on the species
+richness of those cells. For the cells where the probability of having at least
+one link is higher than 0 (or a given threshold, depending on the system), the
+probability of interaction with important clades would then be assessed, and
+finally this probability updates the probability of
+occurrence.](figures/conc_fig4_chapX.png){#fig:synthesis}   
 
-- update probability of occurrence with probability of interaction with local sp pools
-- update probability of occurrence first with the chance of finding a pair, then with the probability of interaction
+### (i) Potential distribution of focal species  
+
+A traditional habitat suitability model should be used as a first step to assess
+the M+A space of the species ([@fig:bam]). The choice of the best model will
+depend on a few criteria such as the nature and quality of your data, and the
+processes you want to investigate, as described in @Guisan2017HabSui and
+@Peterson2012EcoNic. A HSM will indicate where there are suitable habitats for
+the species, which may include areas where the species was never sampled before.
+These areas, the "error" of the model, should be the object of assessment on the
+next steps since it is there where the unknown information about interactions
+is. For each sample cell where the species is predicted to occur, the value of
+known species richness can be used to calculate potential networks with the
+addition of the focal species.
+
+### (ii) Potential networks based on species richness  
+
+The minimum and maximum number of links that are possible depends on how many
+species share the same space [@MacDonald2020RevLin]. Based on that, we can
+calculate the degree distributions that are possible based on Maximum Entropy
+[HALP @francisbanville]  
+
+### (iii) Potential interactions where probability of at least one link is not null  
+
+
+### (iv) Probability of occurrence given the probability of interactions  
+
+
 - Rescuing the logics behind SDMs
 - Why should we integrate interactions with SDMs - the right way?
 - What don't we have yet?
