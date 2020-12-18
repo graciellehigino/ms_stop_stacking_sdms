@@ -50,7 +50,7 @@ temporal scale. This is because the cumulative effect of small scale variation
 on climate, population dynamics and habitat suitability itself results in
 macroecological outcomes such as combinations of extinction and cladogenesis,
 which lead to biodiversity distribution at continental scales. Also, abiotic
-variables are not under the influence of the focus species, which make them
+variables are not under the influence of the focal species, which make them
 statistically safe, and their relationship with the species' niche is assumed to
 be static in space and time, which adds generalization to the model. The biotic
 space, on the other hand, is usually highly dynamic and variable, and it can be
@@ -489,7 +489,7 @@ the accuracy of distribution models [CITATIONS], the ecological interpretation
 is still not convincing. First, as we discussed earlier, the realization of an
 interaction is conditional to many factors, including abundance and other
 interactions, and it's strength and signal can vary in space and time. Second,
-adding a competitor as an equivalent of an absence of the focus species just
+adding a competitor as an equivalent of an absence of the focal species just
 informs the model about environmental conditions that are supposedly not
 suitable for the establishment of a population, not that an ecological
 interaction is taking place there in such a manner that it will influence the
@@ -522,7 +522,7 @@ species richness, and could be used as a validation strategy for HSMs with only
 two time frames: the current known distribution and the potential distribution
 inferred by the HSM. Because the probability of occurrence of one species is
 derived from the probability of occurrence of all other species
-[@Cazelles2016IntBio], we could infer the probability of occurrence of a focus
+[@Cazelles2016IntBio], we could infer the probability of occurrence of a focal
 species based on its potential distribution and local species pools. This
 strategy would require to predict interactions between species that did not
 previously co-occur.  
@@ -545,7 +545,7 @@ We envision a combination of all techniques described here, which would allow a
 more reliable estimation of the area where a species would probably occur
 (illustrated as the area 2 in @fig:bam and in @fig:synthesis). This combination
 would involve three steps, as delineated by @Staniczenko2017LinMac, with an
-initial HSM to assess the potential distribution of one or more focus species,
+initial HSM to assess the potential distribution of one or more focal species,
 and the use of machine learning algorithms to update the probability of
 occurrence from information on potential interactions. In this sense, there are
 two possible venues that could be followed: (i) calculate the probability of
@@ -588,13 +588,29 @@ species share the same space [@MacDonald2020RevLin]. Based on that, we can
 calculate the degree distributions that are possible based on Maximum Entropy
 [HALP @francisbanville]  
 
-### (iii) Potential interactions where probability of at least one link is not null  
+### (iii) Potential interactions where the probability of a degree ≥ 1 is not null  
 
+For the cells where the focal species has at least one possible network where
+its degree is ≥ 1, we can proceed to investigate whether this link is
+ecologically relevant. This can be done by sampling a subset of species that
+occur and that could be important to that focal species (either a competitor, a
+prey, a predator or a facilitator). Some variables that can be important in this
+process are the phylogenetic or the functional diversity, since they can help us
+subset the species pool by evolutionary distance or ecological redundancy. Then
+the probability of interaction can be calculated for the focal species and the
+subset of species following the methods we discussed above, depending on the
+nature of the data available at a macroecological scale. This analysis should
+result on a spatial distribution of interaction probabilities for each cell
+where the species where predicted to occur but was not sampled before.
 
 ### (iv) Probability of occurrence given the probability of interactions  
 
+For those cells where we now have the probability of occurrence and interaction,
+a Bayesian update can be applied to infer the probability of occurrence given
+the probability of interaction [@eq:bayup].  
+$$P\left ( occurrence|interaction \right ) = \frac{P\left ( interaction|occurrence \right )P\left ( occurrence \right )}{P\left ( interaction \right )}$$ {#eq:bayup}
 
-- Rescuing the logics behind SDMs
+
 - Why should we integrate interactions with SDMs - the right way?
 - What don't we have yet?
 - What are the roads never taken?
