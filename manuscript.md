@@ -606,12 +606,22 @@ where the species where predicted to occur but was not sampled before.
 ### (iv) Probability of occurrence given the probability of interactions  
 
 For those cells where we now have the probability of occurrence and interaction,
-a Bayesian update can be applied to infer the probability of occurrence given
-the probability of interaction [@eq:bayup].  
-$$P\left ( occurrence|interaction \right ) = \frac{P\left ( interaction|occurrence \right )P\left ( occurrence \right )}{P\left ( interaction \right )}$$ {#eq:bayup}
+the probability of occurrence given the probability of interaction is a new
+function _h(x)_, which is a combination between a function of probability of
+occurrence _f(x)_ and a function of probability of interaction _g(x)_
+[@eq:bayup].  
+$$h(x) = d(x)\left \lfloor \int f(x)-(\int f(x)-g(x))-(\int g(x)-f(x)) \right \rfloor$$ {#eq:bayup}  
 
+TODO
 
-- Why should we integrate interactions with SDMs - the right way?
+Updating the probabilities of occurrence based on the probabilities of
+interaction is a way to integrate biotic variables on species distribution
+models as a separate step. We believe that this pathway can simplify this
+intricate problem because it disentangles the complex calculation of ecological
+interactions from the abiotic suitability models. Both sides can be run in
+parallel, and in some cases the probability of interaction does not need to be
+calculated every time a model is run. 
+
 - What don't we have yet?
 - What are the roads never taken?
 - Where should we invest in order to achieve the best SDMs we can?
