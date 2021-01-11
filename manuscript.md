@@ -588,10 +588,10 @@ species share the same space [@MacDonald2020RevLin]. Based on that, we can
 calculate the degree distributions that are possible based on Maximum Entropy
 [HALP @francisbanville]  
 
-### (iii) Potential interactions where the probability of a degree \≥ 1 is not null  
+### (iii) Potential interactions where the probability of a degree $\ge$ 1 is not null  
 
 For the cells where the focal species has at least one possible network where
-its degree is \≥ 1, we can proceed to investigate whether this link is
+its degree is $\ge$ 1, we can proceed to investigate whether this link is
 ecologically relevant. This can be done by sampling a subset of species that
 occur and that could be important to that focal species (either a competitor, a
 prey, a predator or a facilitator). Some variables that can be important in this
