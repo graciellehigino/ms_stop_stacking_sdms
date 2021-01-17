@@ -56,7 +56,7 @@ be static in space and time, which adds generalization to the model. The biotic
 space, on the other hand, is usually highly dynamic and variable, and it can be
 stochastic at very small scales to predictable structures at large scales.
 Additionally, because ecological networks are the cumulative result of local
-events [@Poisot2016HowEco; @Guimaraes2020StrEco], its properties can vary with
+events [@Poisot2016HowEco; @Guimaraes2020StrEco], their properties can vary with
 environmental factors and species evolutionary history
 [@MartinGonzalez2015MacPhy; @Dalsgaard2013HisCli].  
 
@@ -547,7 +547,8 @@ more reliable estimation of the area where a species would probably occur
 would involve three steps, as delineated by @Staniczenko2017LinMac, with an
 initial HSM to assess the potential distribution of one or more focal species,
 and the use of machine learning algorithms to update the probability of
-occurrence from information on potential interactions. In this sense, there are
+occurrence from information on potential interactions with all species in a
+metaweb. In this sense, there are
 two possible venues that could be followed: (i) calculate the probability of
 interaction from the local species pool, as suggest @Cazelles2016IntBio, and use
 it to update the probabilities from the HSM, or (ii) calculate the probabilities
@@ -573,7 +574,10 @@ A traditional habitat suitability model should be used as a first step to assess
 the M+A space of the species ([@fig:bam]). The choice of the best model will
 depend on a few criteria such as the nature and quality of your data, and the
 processes you want to investigate, as described in @Guisan2017HabSui and
-@Peterson2012EcoNic. A HSM will indicate where there are suitable habitats for
+@Peterson2012EcoNic. A crucial step in this process is to select a set of
+species that are part of the metaweb where the focal species is inserted. This
+will allow us to model potential networks on the next step.
+A HSM will indicate where there are suitable habitats for
 the species, which may include areas where the species was never sampled before.
 These areas, the "error" of the model, should be the object of assessment on the
 next steps since it is there where the unknown information about interactions
@@ -620,11 +624,18 @@ models as a separate step. We believe that this pathway can simplify this
 intricate problem because it disentangles the complex calculation of ecological
 interactions from the abiotic suitability models. Both sides can be run in
 parallel, and in some cases the probability of interaction does not need to be
-calculated every time a model is run. 
+calculated every time a model is run.
+
+## Every great quest has its challenges
 
 - What don't we have yet?
+- Subjective choices to be made in the process
+- Data to feed the algorithms
+
+## Every quest also has the roads not taken
+
 - What are the roads never taken?
-- Where should we invest in order to achieve the best SDMs we can?
-- What are the most promising areas for development?
+- What are the most promising areas for development? / Where should we invest in
+order to achieve the best SDMs we can?
 
 ## References
