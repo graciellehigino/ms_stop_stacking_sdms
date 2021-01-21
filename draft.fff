@@ -1,0 +1,45 @@
+\begin{figure}
+\hypertarget{fig:bam}{%
+\centering
+\includegraphics{figures/bam.png}
+\caption{The ``BAM diagram,'' adapted from (Jorge Soberón 2007). Open
+circles are absences and solid circles are observed presences. Big
+circles correspond to the theoretical space of a species, regarding its
+biotic interactions (the B), the abiotically suitable space (the A) and
+the geographic area accessible to it (the M). These three aspects
+represent real points of occurrence on the real geographic space (the
+G). Ecological interactions act over this model in four ways: in (1),
+there are potential interactions that are never realized because of
+geographical and environmental constraints; in (2) interactions are
+realized on accessible, abiotically suitable areas; the space (3) is
+where the species could eventually go and establish new interactions,
+while (4) is the area where the occurrence of the species is limited
+only by abiotic factors.}\label{fig:bam}
+}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\centering
+\includegraphics{figures/concept.png}
+\caption{TODO}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}
+\hypertarget{fig:synthesis}{%
+\centering
+\includegraphics{figures/conc_fig4_chapX.png}
+\caption{In the proposed workflow, probabilities of occurrence would be
+updated by the probabilities of new interactions where the Habitat
+Suitability Model suggests potential occurrence. For the sample sites
+where a species is predicted to occur, but did not occur before, the
+probability of this species to belong to a network where it has at least
+one link would be calculated based on the species richness of those
+cells. For the cells where the probability of having at least one link
+is higher than 0 (or a given threshold, depending on the system), the
+probability of interaction with important clades would then be assessed,
+and finally this probability updates the probability of
+occurrence.}\label{fig:synthesis}
+}
+\end{figure}
