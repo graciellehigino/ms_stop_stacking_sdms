@@ -41,7 +41,7 @@
       "orcid": "0000-0002-0735-5184"
     }
   ],
-  "description": "The abstract goes here.",
+  "description": "Species distribution models are characterized by three aspects of a species occurrence: its biotic environment, its abiotic environment, and its mobility range. Nevertheless, most distribution models do not address the biotic interactions that potentially shape a species range, thus measuring only how adequate an environment is for a given population. In this chapter we discuss how we can work towards better species distribution models without ignoring our knowledge about ecological networks and communities’ assemblage. We suggest this can be done in seven steps: 1. careful selection of species to be modelled; 2. performance of habitat suitability models; 3. prediction of a metaweb which contains the selected species; 4. prediction of local networks’ structure and assessment of their feasibility; 5. adjustment of the probabilities of occurrence based on the probabilities of realization of networks; and 6. iteration of this process until the differences between probabilities tends to zero. We highlight how this can be done with the help of machine learning techniques both to predict local networks and to update the results of grinellian habitat suitability models. Furthermore, we point to promising directions on the development of these techniques and the main challenges ecologists might face in the near future.",
   "keywords": [
     "ecological interactions",
     "species distribution models"
